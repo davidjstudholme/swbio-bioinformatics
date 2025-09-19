@@ -23,7 +23,14 @@ First, we need to get the genome sequence into Galaxy. The sequence is available
 [here](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/195/225/GCA_004195225.1_C_fabianii_v1/GCA_004195225.1_C_fabianii_v1_genomic.fna.gz).
 
 So, we can direct Galaxy to this web address.
+- Create a new Galaxy history, called "Cyberlindnera fabianii".
+- Copy the link location "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/195/225/GCA_004195225.1_C_fabianii_v1/GCA_004195225.1_C_fabianii_v1_genomic.fna.gz" to your clipboard.
+- Clicke the **Upload Data** button near the top-left of the Galaxy page.
+- Select the **Paste/Fetch Data** button.
+- Past the link into the text field.
+- Press start.
 
+![Uploading the C. fabianii genome sequence into Galaxy](masking-repeats/upload-cf-genome.png)
 
 
 
