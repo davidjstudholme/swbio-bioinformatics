@@ -2,4 +2,6 @@
 https://davidjstudholme.github.io/swbio-bioinformatics/
 
 
-[link](workshop-1.md)
+[link](introduction-to-bioinformatics.md)
+[Reproducible bioinformatics workflows using Galaxy](introduction-to-galaxy.md)
+([Responsible use of AI](responsible-use-of-ai.md)
