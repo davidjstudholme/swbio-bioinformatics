@@ -8,6 +8,7 @@ Welcome to the SWBio Bioinformatics course at https://davidjstudholme.github.io/
 1. [Responsible use of AI](responsible-use-of-ai.md)
 
 ## Tuesday a.m. - Working with genomic sequence data
+
 1. [Assembling a prokaryotic genome from short reads](assembling-bacterial-genome-short-reads.md)
 2. [Assembling a prokaryotic genome from long reads](assembling-bacterial-genome-long-reads.md)
 
@@ -15,7 +16,7 @@ Welcome to the SWBio Bioinformatics course at https://davidjstudholme.github.io/
 
 
 ## Wednesday a.m. - Gene discovery, functional prediction and genome annotation
-[AI-enabled prediction of protein 3-D structure)[alphafold.md)
+1. [AI-enabled prediction of protein 3-D structure](alphafold.md)
 
 ## Wednesday p.m.
 
