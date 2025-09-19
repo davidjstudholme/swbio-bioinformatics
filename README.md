@@ -15,6 +15,7 @@ Welcome to the SWBio Bioinformatics course at https://davidjstudholme.github.io/
 
 
 ## Wednesday a.m. - Gene discovery, functional prediction and genome annotation
+[AI-enabled prediction of protein 3-D structure)[alphafold.md)
 
 ## Wednesday p.m.
 
