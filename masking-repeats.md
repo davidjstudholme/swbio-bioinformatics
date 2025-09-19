@@ -32,5 +32,7 @@ So, we can direct Galaxy to this web address.
 
 ![Uploading the C. fabianii genome sequence into Galaxy](masking-repeats/upload-cf-genome.png)
 
+![Uploading the C. fabianii genome sequence into Galaxy](masking-repeats/uploaded-cf-genome.png)
+
 
 
