@@ -25,14 +25,20 @@ First, we need to get the genome sequence into Galaxy. The sequence is available
 So, we can direct Galaxy to this web address.
 - Create a new Galaxy history, called "Cyberlindnera fabianii".
 - Copy the link location "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/004/195/225/GCA_004195225.1_C_fabianii_v1/GCA_004195225.1_C_fabianii_v1_genomic.fna.gz" to your clipboard.
-- Clicke the **Upload Data** button near the top-left of the Galaxy page.
+- Click the **Upload Data** button near the top-left of the Galaxy page.
 - Select the **Paste/Fetch Data** button.
-- Past the link into the text field.
-- Press start.
+- Paste the link into the text field:
 
 ![Uploading the C. fabianii genome sequence into Galaxy](masking-repeats/upload-cf-genome.png)
 
+- Press the **Start** button.
+
+When the file has finished uploading into Galaxy, you will see it appear in your history, near the top-right of the Galaxy page:
+
 ![Uploading the C. fabianii genome sequence into Galaxy](masking-repeats/uploaded-cf-genome.png)
+
+Now, we are ready to use the [RepeatModeller](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fcsbl%2Frepeatmodeler%2Frepeatmodeler%2F2.0.5%2Bgalaxy0&version=latest) 
+tool to search for repetitive sequences in this uploaded genome sequences.
 
 
 
