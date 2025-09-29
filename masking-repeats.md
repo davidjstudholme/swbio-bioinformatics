@@ -52,6 +52,28 @@ After the RepeatModeller tool has finished running, you will see the results app
 
 ![RepeatModeller results in Galaxy history](masking-repeats/finished-running-repeatmodeller.png)
 
+Now that we have a library of repeat sequences, identified in this genome, we can proceed to searching for all instances of those repeats and masking them in the genome sequence. For that, we will use the [RepeatMasker tool](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Frepeat_masker%2Frepeatmasker_wrapper%2F4.1.5%2Bgalaxy0&version=latest).
+
+### Hands on: scan the genome sequence against library of repeat sequences
+
+- Search for the RepeatMasker tool in the Galaxy Tool search box.
+- For "Genomic DNA", select the genome sequence file that you uploaded to Galaxy previously.
+- For "Repeat library source", select Dfam.
+- For "Select species name from a list", select Yes.
+- For "Species", select Human.
+- For "Output annotation of repeats in GFF format", choose Yes.
+- For "Perform soft-masking instead of hard-masking", choose Yes.
+- Press the **Run Tool** button to begin.
+
+![Seeting up RepeatMasker tool](masking-repeats/running-repeatmasker-1.png)
+
+
+**Note** that we select human as the species even though we are analysing a non-human (fungal) genome. There is no bespoke library of repeats available for our fungal genome that we can simply choose "off the shelf". Instead, we use a library of human repeat sequences that includes many common repeats found in many organisms. we can refine this later by using the library of repeats that we generated speciically from this genome using RepeatModeller. But we will start by simply searching against human repeat sequences.
+
+
+
+  
+
 
 
 
