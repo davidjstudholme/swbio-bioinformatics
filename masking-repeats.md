@@ -70,7 +70,33 @@ Now that we have a library of repeat sequences, identified in this genome, we ca
 
 **Note** that we select human as the species even though we are analysing a non-human (fungal) genome. There is no bespoke library of repeats available for our fungal genome that we can simply choose "off the shelf". Instead, we use a library of human repeat sequences that includes many common repeats found in many organisms. we can refine this later by using the library of repeats that we generated speciically from this genome using RepeatModeller. But we will start by simply searching against human repeat sequences.
 
+After running RepeatMassker, the results will appear in your Galaxy history:
 
+![RepeatMasker results](masking-repeats/repeatmasker-results-1.png)
+
+RepeatMasker has created five output files:
+
+- Masked sequence
+- Repeat statistics
+- Output log
+- Repeat catalogue
+- Repeat annotation
+
+Let's take a look at the masked sequence:
+
+![Masked genome sequence](masking-repeats/masked-sequence.png)
+
+Notice that RepeatMasker has found a match to a known repeat sequence (from the human repeat library). It has trasnformed the sequence into lowercase. In other words it has "soft masked" this sequence.
+
+### Question: what proportion of the genome has been masked? 
+
+You can find the answer among the RepeatMasker results in your Galaxy history:
+
+![RepeatMasker stats](masking-repeats/repeat-masker-stats-1.png)
+
+Here, you can see that only 1.16 % of the fungal genome has been masked, based on searching against human repeats. This indicates that we probably need to search against the species-specific repeats too.
+
+  
 
   
 
