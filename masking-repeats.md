@@ -40,5 +40,20 @@ When the file has finished uploading into Galaxy, you will see it appear in your
 Now, we are ready to use the [RepeatModeller](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fcsbl%2Frepeatmodeler%2Frepeatmodeler%2F2.0.5%2Bgalaxy0&version=latest) 
 tool to search for repetitive sequences in this uploaded genome sequences.
 
+### Hands on: identify repeat sequences using RepeatModeller
+
+- Search for the RepeatModeller tool in the Tools search box (top left of the Galaxy web page)
+- For "Input genome fasta", select the genome sequence that you uploaded into Galaxy previously.
+- Press either of the **Run Tool** buttons.
+
+![Setting-up RepeatModeller](masking-repeats/setup-repeatmodeller.png)
+
+After the RepeatModeller tool has finished running, you will see the results appear in your Galaxy history.
+
+![RepeatModeller results in Galaxy history](masking-repeats/finished-running-repeatmodeller.png)
+
+
+
+
 
 
