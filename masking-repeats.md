@@ -120,4 +120,13 @@ When RepeatMasker has finished searching for repeats in our fungal genome sequen
 It will look something like this:
   
 ![Screenshot of Galaxy history](masking-repeats/finished-running.png)
+
+### Question: what proportion of the genome has been masked? 
+
+You can find the answer among the RepeatMasker results in your Galaxy history:
+
+![RepeatMasker stats](masking-repeats/repeat-masker-stats-2.png)
+
+This second round of repeat-masking has slightly increased the proportion of the genome that is masked;
+however, it is still very small. This might reflect that repetitive sequences are under-represented in this draft genome sequence, since it was assembled from only short Illumina sequence reads.
   
