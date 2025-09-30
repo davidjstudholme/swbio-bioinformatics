@@ -54,7 +54,7 @@ After the RepeatModeller tool has finished running, you will see the results app
 
 Now that we have a library of repeat sequences, identified in this genome, we can proceed to searching for all instances of those repeats and masking them in the genome sequence. For that, we will use the [RepeatMasker tool](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Frepeat_masker%2Frepeatmasker_wrapper%2F4.1.5%2Bgalaxy0&version=latest).
 
-### Hands on: scan the genome sequence against library of repeat sequences
+### Hands on: scan the genome sequence against library of (human) repeat sequences
 
 - Search for the RepeatMasker tool in the Galaxy Tool search box.
 - For "Genomic DNA", select the genome sequence file that you uploaded to Galaxy previously.
@@ -95,6 +95,22 @@ You can find the answer among the RepeatMasker results in your Galaxy history:
 ![RepeatMasker stats](masking-repeats/repeat-masker-stats-1.png)
 
 Here, you can see that only 1.16 % of the fungal genome has been masked, based on searching against human repeats. This indicates that we probably need to search against the species-specific repeats too.
+By using the human library of repeats, we will have only identified the most generic, common and simple repeats. We are probably missing a lot of repeats in this fungal genome. To get a more comprehensive search for repeats in our fungal genome, we will now use RepeatMasker to search against the repeats that we previously discovered using RepeatModeller.
+
+### Hands on: scan the genome sequence against library of species-specific repeat sequences
+
+
+- Search for the RepeatMasker tool in the Galaxy Tool search box.
+- For "Genomic DNA", select the repeat-masked version of the genome sequence file that you uploaded to Galaxy previously.
+- For "Repeat library source", select "Custom library of repeats".
+- For "Select species name from a list", select Yes.
+- For "Custom library of repeats", select the "consensus sequences" output that we previously generated via RepeatModeller.
+- For "Output annotation of repeats in GFF format", choose Yes.
+- For "Perform soft-masking instead of hard-masking", choose Yes.
+- Press the **Run Tool** button to begin.
+
+![Seeting up RepeatMasker tool](masking-repeats/running-repeatmasker-2.png)
+
 
   
 
