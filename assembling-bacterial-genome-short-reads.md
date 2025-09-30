@@ -21,6 +21,7 @@ SPAdes can assemble genome sequences from short reads only or it can assemble fr
 - For "Select output format", choose "gzip compressed fastq".
 - Press the **Run Tool** button.
 
+![Getting the data from SRA](<assembly/Screenshot 2025-09-30 at 15.36.23.png>)
 
 ### Hands on: perform quality control using TrimGalore
  
@@ -29,15 +30,33 @@ SPAdes can assemble genome sequences from short reads only or it can assemble fr
 - For "Select a paired collection", select the SRR15305418 paired sequence reads that you obtained earlier.
 - Press the **Run Tool** button.
 
+![Running TrimGalore](<assembly/Screenshot 2025-09-30 at 15.39.31.png>)
+
 TrimGalore removes poor-quality sequence reads and trims poor-quality ends from otherwise high-quality reads.
+
+TrimGalore results appear in the Galaxy history.
+
+![TrimGalore results in history](<assembly/Screenshot 2025-09-30 at 15.50.46.png>)
+
 
 ### Hands on: check the quality of the sequence data before and after applying filtering + trimming
 
 We will use FastQC and MultiQC to assess the quality of the sequence reads data (which is in FASTQ format).
 
 - Find the [FastQC tool](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffastqc%2Ffastqc%2F0.74%2Bgalaxy1&version=latest) in Galaxy.
-- 
 
 
-Do the same for the post-TrimGalore data too.
+![Running FastQC on original data](<assembly/Screenshot 2025-09-30 at 15.54.42.png>)
+
+- Do the same for the post-TrimGalore data too.
+
+![Running FastQC on post-TrimGalore data](<assembly/Screenshot 2025-09-30 at 15.55.35.png>)
+
+FastQC generates various output files. You may need to click on the "eye" icon to display hidden files, in order to see all the FastQC output.
+
+![Results from FastQC](<assembly/Screenshot 2025-09-30 at 16.13.04.png>)
+
+You can now explore and view the FastQC output directly, if you wish. Alternatively, load the FastQC output into MultiQC.
+
+
 
