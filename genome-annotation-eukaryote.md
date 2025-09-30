@@ -34,3 +34,13 @@ Once the upload has completed, the protein-sequences file will appear in your Ga
 
 The output from Braker3 is a file in [GFF3 format](https://www.ensembl.org/info/website/upload/gff3.html) that describes the position of each predicted gene (and other genomic features). GFF3 is a standard
 bioinformatics format for describing features on a DNA sequence.
+
+We can interactively visualise the genome annotation by loading this GFF3 file into a genome browser such as [IGV](https://doi.org/10.1093/bib/bbs017) or [Trackster](https://doi.org/10.1038/nbt.2404). 
+
+We can also extract the amino-acid sequences of the proteins products predicted by Braker3. To do this, we will use the GFFread tool in Galaxy.
+
+
+
+
+
+
