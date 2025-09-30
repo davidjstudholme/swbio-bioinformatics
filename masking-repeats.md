@@ -119,11 +119,5 @@ While RepeatMasker is still running, your Galaxy history will looks something li
 When RepeatMasker has finished searching for repeats in our fungal genome sequence, we will see the results in the Galaxy history.
 It will look something like this:
   
-
+![Screenshot of Galaxy history](masking-repeats/finished-running.png)
   
-
-
-
-
-
-
