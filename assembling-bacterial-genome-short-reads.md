@@ -58,5 +58,7 @@ FastQC generates various output files. You may need to click on the "eye" icon t
 
 You can now explore and view the FastQC output directly, if you wish. Alternatively, load the FastQC output into MultiQC.
 
+![Setting up MultiQC to analyse FastQC output](<assembly/Screenshot 2025-09-30 at 16.36.40.png>)
 
+![Selecting the FastQC raw-data outputs for input to MultiQC](<assembly/Screenshot 2025-09-30 at 16.34.47.png>)
 
