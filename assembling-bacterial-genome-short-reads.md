@@ -22,9 +22,18 @@ SPAdes can assemble genome sequences from short reads only or it can assemble fr
 - Press the **Run Tool** button.
 
 
-### Hands on: check the quality of the data
+### Hands on: perform quality control using TrimGalore
  
-Optionally, we could filter-out poor-quality sequence reads and/or trim poor-quality parts of reads.
+- In Galaxy, find the [TrimGalore tool](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftrim_galore%2Ftrim_galore%2F0.6.10%2Bgalaxy0&version=latest).
+- For "Is this library paired- or single-end?", choose "Paired collection".
+- For "Select a paired collection", select the SRR15305418 paired sequence reads that you obtained earlier.
+- Press the **Run Tool** button.
+
+TrimGalore removes poor-quality sequence reads and trims poor-quality ends from otherwise high-quality reads.
+
+### Hands on: check the quality of the sequence data before and after applying filtering + trimming
+
+We will use FastQC and MultiQC to assess the quality of the sequence reads data (which is in FASTQ format).
 
 
 
