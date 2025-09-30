@@ -111,7 +111,13 @@ By using the human library of repeats, we will have only identified the most gen
 
 ![Seeting up RepeatMasker tool](masking-repeats/running-repeatmasker-2.png)
 
+While RepeatMasker is still running, your Galaxy history will looks something like this image:
 
+![Screenshot of Galaxy history](masking-repeats/still-running.png)
+
+
+When RepeatMasker has finished searching for repeats in our fungal genome sequence, we will see the results in the Galaxy history.
+It will look something like this:
   
 
   
