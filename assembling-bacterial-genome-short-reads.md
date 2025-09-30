@@ -35,6 +35,9 @@ TrimGalore removes poor-quality sequence reads and trims poor-quality ends from 
 
 We will use FastQC and MultiQC to assess the quality of the sequence reads data (which is in FASTQ format).
 
+- Find the [FastQC tool](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffastqc%2Ffastqc%2F0.74%2Bgalaxy1&version=latest) in Galaxy.
+- 
 
 
+Do the same for the post-TrimGalore data too.
 
