@@ -63,7 +63,7 @@ You can now explore and view the FastQC output directly, if you wish. Alternativ
 ![Selecting the FastQC raw-data outputs for input to MultiQC](<assembly/Screenshot 2025-09-30 at 16.34.47.png>)
 
 
-![MultiQC results](assembly/Screenshot 2025-09-30 at 16.51.48.png)
+![MultiQC results](<assembly/Screenshot 2025-09-30 at 16.51.48.png>)
 
 
 
