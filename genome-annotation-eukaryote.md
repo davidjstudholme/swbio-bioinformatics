@@ -32,6 +32,8 @@ Once the upload has completed, the protein-sequences file will appear in your Ga
 
 ![Running Braker3](annotation/running-braker3.png)
 
+This step will likely take a long time.
+
 The output from Braker3 is a file in [GFF3 format](https://www.ensembl.org/info/website/upload/gff3.html) that describes the position of each predicted gene (and other genomic features). GFF3 is a standard
 bioinformatics format for describing features on a DNA sequence.
 
