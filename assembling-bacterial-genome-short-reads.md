@@ -178,6 +178,7 @@ The GFF3-formatted annotation is useful, because we can view this in an interact
 
 ![Viewing the assembled and annotated genome sequence in IGV](<annotation/igv-app.svg>)
 
+See image: [Viewing the assembled and annotated genome sequence in IGV](<annotation/igv-app.svg>).
 
 
 
