@@ -56,14 +56,16 @@ FastQC generates various output files. You may need to click on the "eye" icon t
 
 ![Results from FastQC](<assembly/Screenshot 2025-09-30 at 16.13.04.png>)
 
-You can now explore and view the FastQC output directly, if you wish. Alternatively, load the FastQC output into MultiQC.
-
-![Setting up MultiQC to analyse FastQC output](<assembly/Screenshot 2025-09-30 at 16.47.11.png>)
-
-![Selecting the FastQC raw-data outputs for input to MultiQC](<assembly/Screenshot 2025-09-30 at 16.34.47.png>)
+You can now explore and view the FastQC output. Let's compare the data before and after QC with TrimGalore:
 
 
-![MultiQC results](<assembly/Screenshot 2025-09-30 at 16.51.48.png>)
+
+|                   Before QC                                                      |              After QC                                                            |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------  |
+| ![Forward reads, before trimming](assembly/SRR15305418-fwd-after-trimgalore.png) | ![Forward reads, before trimming](assembly/SRR15305418-fwd-after-trimgalore.png) |
+
+
+
 
 
 
