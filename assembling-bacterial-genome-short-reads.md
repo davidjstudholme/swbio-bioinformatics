@@ -92,6 +92,20 @@ SPAdes can assemble genome sequences from short reads only or it can assemble fr
 
   ![Running SPAdes](<assembly/Screenshot 2025-10-01 at 10.39.43.png>)
 
+When SPAdes has finished running, it will have generated four new files in the Galaxy history:
+
+- Contigs (in FASTA format)
+- Scaffolds (in FASTA format)
+- Assembly graph (in GFA format)
+- Assembly graph with scaffolds (in GFA format)
+
+Although it is fun and interesting to view the assembly graph using [Bandage](https://doi.org/10.1093/bioinformatics/btv383), what we really want from assembly is the assembled sequence.
+This is provided in FASTA format. Notice that there are two files: contigs and scaffolds. In practice, the contigs and scaffolds are usually identical or nearly identical.
+The difference is that sometimes SPAdes is able to join two or more contigs together into a larger sequence called a scaffold.
+
+
+
+
 
 
 
