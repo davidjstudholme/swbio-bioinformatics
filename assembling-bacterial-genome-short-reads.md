@@ -99,19 +99,23 @@ When SPAdes has finished running, it will have generated four new files in the G
 - Assembly graph (in GFA format)
 - Assembly graph with scaffolds (in GFA format)
 
+![SPAdes results in Galaxy history](assembly/spades-results)
+
+
+### Hands on: view the assembly graph using Bandage
+
+![Assembly graph](<assembly/Galaxy28-[Bandage Image on data 25_ Assembly Graph Image].jpg>)
+
+
 Although it is fun and interesting to view the assembly graph using [Bandage](https://doi.org/10.1093/bioinformatics/btv383)
 which can be run [within Galaxy](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbandage%2Fbandage_image%2F2022.09%2Bgalaxy4&version=latest),
 what we really want from assembly is the assembled sequence.
 This is provided in FASTA format. Notice that there are two files: contigs and scaffolds. In practice, the contigs and scaffolds are usually identical or nearly identical.
 The difference is that sometimes SPAdes is able to join two or more contigs together into a larger sequence called a scaffold.
 
-![SPAdes results in Galaxy history](assembly/spades-results)
-
-Now, let's do some quality checks on the results of this SPAdes assembly.
-
 ### Hands on: quality checks on the SPAdes genome assembly, using QUAST
 
-
+Now, let's do some quality checks on the results of this SPAdes assembly.
 
 
 
