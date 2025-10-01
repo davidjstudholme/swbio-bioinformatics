@@ -166,15 +166,19 @@ In other words, we will annotate the genome sequence. We will use an automated a
 
  Bakta will generate four outputs:
 
- - a [summary](<>),
- - the [annotation](<>) in [GFF3 format](https://www.ensembl.org/info/website/upload/gff3.html),
- - [nucleotide sequences](<>) of the predicted genes, etc., and
- - a [plot](<>) of the annotation.
+ - a [summary](<annotation/Galaxy34-[Bakta on data 27_ Summary].tabular>),
+ - the [annotation](<annotation/Galaxy35-[Bakta on data 27_ Annotation and sequences (GFF3)].gff3>) in [GFF3 format](https://www.ensembl.org/info/website/upload/gff3.html),
+ - [nucleotide sequences](<annotation/Galaxy36-[Bakta on data 27_ Feature nucleotide sequences].fasta>) of the predicted genes, etc., and
+ - a [plot](<annotation/Galaxy37-[Bakta on data 27_ Plot of the annotation].svg>) of the annotation.
 
 The plot looks a bit of a mess because there are so many tiny contigs, which take up much of the space on the plot image. Note that most of the genome is
 represented in the largest contigs/scaffolds. We know from the QUAST output that about 90% of the total sequence is contained in the largest 41 contigs (or 38 scaffolds).
 
-The GFF3-formatted annotation is useful, because we can view this in an interactive genome browser such as the [Integrative Genome Browser (IGV)](https://igv.org/).
+The GFF3-formatted annotation is useful, because we can view this in an interactive genome browser such as the [Integrative Genome Browser (IGV)](https://igv.org/):
+
+![Viewing the assembled and annotated genome sequence in IGV](<annotation/igv-app.svg>)
+
+
 
 
 
