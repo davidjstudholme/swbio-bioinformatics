@@ -165,10 +165,11 @@ In other words, we will annotate the genome sequence. We will use an automated a
 
  Bakta will generate four outputs:
 
- - A summary
- - The annotation in GFF3 format
- - Nucleotide sequences of the predicted genes, etc.
- - A plot of the annotation
+ - a [summary](<annotation/Galaxy30-[Bakta on data 27_ Summary].tabular>),
+ - the [annotation](<annotation/Galaxy31-[Bakta on data 27_ Annotation and sequences (GFF3)].gff3>) in [GFF3 format](https://www.ensembl.org/info/website/upload/gff3.html),
+ - [nucleotide sequences](<annotation/Galaxy32-[Bakta on data 27_ Feature nucleotide sequences].fasta>) of the predicted genes, etc., and
+ - a [plot](<annotation/Galaxy33-[Bakta on data 27_ Plot of the annotation].svg>) of the annotation.
+
 
 
 
