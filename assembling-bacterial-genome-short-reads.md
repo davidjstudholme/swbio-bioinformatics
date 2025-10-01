@@ -62,7 +62,9 @@ You can now explore and view the FastQC output. Let's compare the data before an
 
 |                   Before QC                                                      |              After QC                                                            |
 | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------  |
-| ![Forward reads, before trimming](assembly/SRR15305418-fwd-after-trimgalore.png) | ![Forward reads, before trimming](assembly/SRR15305418-fwd-after-trimgalore.png) |
+| ![Forward reads, before trimming](assembly/SRR15305418-fwd-before-trimgalore.png) | ![Forward reads, after trimming](assembly/SRR15305418-fwd-after-trimgalore.png) |
+| ![Reverse reads, before trimming](assembly/SRR15305418-rev-before-trimgalore.png) | ![Reverse reads, after trimming](assembly/SRR15305418-rev-after-trimgalore.png) |
+
 
 
 
