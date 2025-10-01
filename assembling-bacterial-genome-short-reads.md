@@ -56,14 +56,41 @@ FastQC generates various output files. You may need to click on the "eye" icon t
 
 ![Results from FastQC](<assembly/Screenshot 2025-09-30 at 16.13.04.png>)
 
-You can now explore and view the FastQC output. Let's compare the data before and after QC with TrimGalore:
-
+You can now explore and view the FastQC output. Let's compare the data before and after QC with TrimGalore. For example, we could compare the quality-score profiles across the sequence reads:
 
 
 |               |    Before QC                                                                      |              After QC                                                           |
 | ------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------  |
 | Forward reads | ![Forward reads, before trimming](assembly/SRR15305418-fwd-before-trimgalore.png) | ![Forward reads, after trimming](assembly/SRR15305418-fwd-after-trimgalore.png) |
 | Reverse reads | ![Reverse reads, before trimming](assembly/SRR15305418-rev-before-trimgalore.png) | ![Reverse reads, after trimming](assembly/SRR15305418-rev-after-trimgalore.png) |
+
+Note that the QC with TrimGalore has removed some of the poorer data, but has not drastically changed the profiles. The data were quite good even before QC.
+
+Now that we are content with the quality of the sequence data, we can proceed with the de-novo assembly. But before that, let's make life easier for ourselves by editing the names of the datasets in our Galaxy history. Notice the "pencil" icon, which enables you to edit the names of items in the history.
+
+Here is a view of my Galaxy history before and after manually editing the names of the datasets:
+
+|                         History before manually editing                       |     |              History after manually editing                                 |            
+| ---------------------------------------------------------------------------   | --- | --------------------------------------------------------------------------  |
+| ![History after editing](<assembly/Screenshot 2025-10-01 at 10.16.31.png>)    |  -> | ![History before editing](<assembly/Screenshot 2025-10-01 at 10.24.54.png>) | 
+
+
+### De-novo assembly
+
+Now we are ready to commence the de-novo assembly of genomic sequence reads into as assembled genome sequence. There are many tools that we could use for this job. We will use one of the most commonly used tools, names SPAdes. This usually works very well for microbial genomes, but it will struggle with very large genomes such as those from plants and animals.
+
+SPAdes can assemble genome sequences from short reads only or it can assemble from a combination of short reads + long reads. Here, we are going to use only short reads.
+
+### Hands on: assembling short Illumina reads using SPAdes
+
+- Find the [SPAdes tool](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fnml%2Fspades%2Fspades%2F4.2.0%2Bgalaxy0&version=latest) via  the Tools search box in Galaxy.
+- For "Operation mode", select "Assembly and error correction".
+- For "Single-end or paired-end short-reads", select "Paired end: list of dataset pairs"
+- For the input data, "FASTA/FASTQ file(s): collection", choose the output from the TrimGalore QC step.
+- For "Pipeline options", it is recommended to select "Isolate".
+- Press the **Run Tool** button to begin.
+
+  ![Running SPAdes](<assembly/Screenshot 2025-10-01 at 10.39.43.png>)
 
 
 
