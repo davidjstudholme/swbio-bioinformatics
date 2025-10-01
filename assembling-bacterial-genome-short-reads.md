@@ -104,18 +104,31 @@ When SPAdes has finished running, it will have generated four new files in the G
 
 ### Hands on: view the assembly graph using Bandage
 
+It is fun and interesting to view the assembly graph using [Bandage](https://doi.org/10.1093/bioinformatics/btv383),
+which can be run [within Galaxy](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbandage%2Fbandage_image%2F2022.09%2Bgalaxy4&version=latest).
+Try it! You will generate an image something like this, which illustrates the complexity of the assembly.
+
 ![Assembly graph](<assembly/Galaxy28-[Bandage Image on data 25_ Assembly Graph Image].jpg>)
 
 
-Although it is fun and interesting to view the assembly graph using [Bandage](https://doi.org/10.1093/bioinformatics/btv383)
-which can be run [within Galaxy](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbandage%2Fbandage_image%2F2022.09%2Bgalaxy4&version=latest),
-what we really want from assembly is the assembled sequence.
+### Hands on: quality checks on the SPAdes genome assembly, using QUAST
+
+What we really want from assembly is the assembled sequence.
 This is provided in FASTA format. Notice that there are two files: contigs and scaffolds. In practice, the contigs and scaffolds are usually identical or nearly identical.
 The difference is that sometimes SPAdes is able to join two or more contigs together into a larger sequence called a scaffold.
 
-### Hands on: quality checks on the SPAdes genome assembly, using QUAST
+Now, let's do some quality checks on the results of this SPAdes assembly, using a tool called QUAST.
 
-Now, let's do some quality checks on the results of this SPAdes assembly.
+- Find the [QUAST tool within Galaxy](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fquast%2Fquast%2F5.3.0%2Bgalaxy0&version=latest). You can use the Tools search box.
+
+
+![Running QUAST on the genome assembly](<assembly/Screenshot 2025-10-01 at 11.57.21.png>)
+
+
+![QUAST results](<assembly/Screenshot 2025-10-01 at 12.01.36.png>)
+
+
+
 
 
 
