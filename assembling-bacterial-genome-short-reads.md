@@ -103,6 +103,14 @@ Although it is fun and interesting to view the assembly graph using [Bandage](ht
 This is provided in FASTA format. Notice that there are two files: contigs and scaffolds. In practice, the contigs and scaffolds are usually identical or nearly identical.
 The difference is that sometimes SPAdes is able to join two or more contigs together into a larger sequence called a scaffold.
 
+![SPAdes results in Galaxy history](assembly/spades-results)
+
+Now, let's do some quality checks on the results of this SPAdes assembly.
+
+### Hands on: quality checks on the SPAdes genome assembly, using QUAST
+
+
+
 
 
 
