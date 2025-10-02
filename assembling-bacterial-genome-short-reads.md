@@ -84,6 +84,9 @@ Here is a view of my Galaxy history before and after manually editing the names 
 | ---------------------------------------------------------------------------   | --- | --------------------------------------------------------------------------  |
 | ![History after editing](<assembly/Screenshot 2025-10-01 at 10.16.31.png>)    |  -> | ![History before editing](<assembly/Screenshot 2025-10-01 at 10.24.54.png>) | 
 
+Further information. If you want to explore the topic of sequencing QC in more depth, then please see this [tutorial about quality control of seuqence data in Galaxy](https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html).
+
+
 
 ### De-novo assembly
 
