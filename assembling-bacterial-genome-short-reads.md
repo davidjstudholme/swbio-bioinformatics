@@ -5,6 +5,16 @@ We will use a very commonly-used software tool called SPAdes.
 
 SPAdes can assemble genome sequences from short reads only or it can assemble from a combination of short reads + long reads. Here, we are going to use only short reads.
 
+
+### The worflow
+
+Here is a graphical overview of the workflow that you will perform in this exercise:
+
+![Workflow for assembly and annotation from short reads](<assembly/Screenshot 2025-10-02 at 09.23.25.png>)
+
+See image: [Workflow for assembly and annotation from short reads](<assembly/Screenshot 2025-10-02 at 09.23.25.png>).
+
+
 ### The dataset
 
 - We will use a sequencing dataset that has been deposited in the Sequence Read Archive (SRA) under accession number SRR15305418.
