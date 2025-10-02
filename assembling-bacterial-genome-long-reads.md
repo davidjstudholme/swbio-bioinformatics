@@ -25,8 +25,10 @@ If you are interested in knowing more, please see this [tutorial about using Uni
 We do not have time to complete that process today, but feel free to try it on Thursday or Friday if you wish.
 
 
-
-In the following exercise, we will experience the value of using long sequencing reads to improve the genome assembly.
+In the following exercise, we will do assembly of only long reads, using an assembly tools called Flye.
+Flye is specifically designed to assemble long reads (such as Oxford Nanopore) rather than short reads (such as Illumina).
+It can be advantageous to combine short reads plus long reads in the assembly. But these days, it is usually possible to generate a high-quality
+assembly from only long reads.
 
 ### Hands on: get the long sequence reads
 
@@ -57,6 +59,35 @@ See image: ([SRR30037665 long reads in Galaxy](<assembly/Screenshot 2025-10-02 a
 See image: [Running Filtlong in Galaxy](<assembly/Screenshot 2025-10-02 at 19.52.20.png>).
 
 Optionally, you could now use FastQC to assess the quality of the long reads before and after filtering.
+
+### Assemble the filtered long reads, using Flye
+
+- Find the [Flye tool in Galaxy](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fflye%2Fflye%2F2.9.6%2Bgalaxy0&version=latest).
+- For "Input reads", select the filtered long reads.
+- For "Mode", select "Nanopore HQ".
+- For all other parameters and options, leave the default settings.
+- Click on **Run Tool**
+ 
+See image: [Running Flye in Galaxy](<assembly/Screenshot 2025-10-02 at 21.25.53.png>).
+
+Flye will generate four outputs:
+
+- Consensus - this is the assembled genome sequence
+- Assembly graph
+- Graphical fragment assembly
+- Assembly info	
+
+Notice that we have now succeeded in assemblign the genome into just three circular contigs, that correspond to the chromosome and two plasmids:
+
+![Screenshot of assembly info](<assembly/Screenshot 2025-10-02 at 21.33.56.png>)
+
+We can visualise the graphical fragment assembly using Bandage. This helps to illustrate the massive improvement in assembly using long reads versus short reads.
+
+
+|                 Assembly graph from long reads                                                              |   Assembly graph from short reads              |
+| ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| ![Assembly graph from long reads](<assembly/Galaxy82-[Bandage Image on data 63_ Assembly Graph Image].jpg>) | ![Assembly graph from short reads](<assembly/Galaxy28-[Bandage Image on data 25_ Assembly Graph Image].jpg>) |
+
 
 
 
