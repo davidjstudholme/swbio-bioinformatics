@@ -34,21 +34,19 @@ See image: [Summary stats for SRR30037665 at SRA](<assembly/Screenshot 2025-10-0
 Now we have the long reads in the Galaxy history. You can view the sequence reads in Galaxy.
 See image: ([SRR30037665 long reads in Galaxy](<assembly/Screenshot 2025-10-02 at 16.52.51.png>)). Feel free to edit the name of the dataset from "Single-end data (fastq-dump)" to something more informative like "SRR30037665 long ONT reads".
 
-### Assemble the short reads + long reads, using SPAdes
 
-Just like we did previously, we are going to use SPAdes as the tool for _de-novo_ genome assembly. This time we will input long reads in addition to the short reads that we inputted previously.
+### Filter the long reads, using Filtlong
 
-- Find [SPAdes in Galaxy](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fnml%2Fspades%2Fspades%2F4.2.0%2Bgalaxy0&version=latest).
-- For "Operation mode", choose "Assembly and error correction".
-- For "Single-end or paired-end short-reads", choose "Paired-end: list of dataset pairs".
-- For "FASTA/FASTQ file(s): collection", choose the SRR15305418 TrimGalore results that you prepared earlier (i.e. short reads after QC).
-- Click on "Additional read files", and under "Nanopore reads", select the SRR30037665 long reads.
-- Under "Pipeline options", activate the "Isolate" option.
-- Press **Run Tool**.
+- For "Input FASTQ", choose the SRR30037665 long reads.
+- For "Keep percentage", enter "90".
+- For "Min. length", enter "1000".
+- Press **Run Tool**
 
-See image: [Running SPAdes with short + long reads](<assembly/Screenshot 2025-10-02 at 17.07.58.png>).
+See image: [Running Filtlong in Galaxy](<assembly/Screenshot 2025-10-02 at 19.52.20.png>).
 
-  
+Optionally, you could now use FastQC to assess the quality of the long reads before and after filtering.
+
+
 
 
 
