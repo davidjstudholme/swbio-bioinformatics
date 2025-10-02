@@ -8,32 +8,21 @@ In the following exercise, we will experience the value of using long sequencing
 
 ### Hands on: copy the Galaxy history to create a new Galaxy history
 
+In this exercise, we are going to assemble the genome sequence from the same bacterial strain as previously. 
+Previously, we downloaded the short sequence reads and performed some quality control on them. We will re-use those
+short reads in addition to the long reads. So, let's save some time by re-using the short-read data.
 
-![Copy the Galaxy history 1](<assembly/Screenshot 2025-10-02 at 09.56.25.png>)
-
-
-See image: [Copy the Galaxy history](<assembly/Screenshot 2025-10-02 at 09.56.25.png>).
-
-
-![Copy the Galaxy history 2](<assembly/Screenshot 2025-10-02 at 16.20.41.png>)
-
-
-See image: [Copy the Galaxy history 2](<assembly/Screenshot 2025-10-02 at 16.20.41.png>).
-
-
-![New Galaxy history](<assembly/Screenshot 2025-10-02 at 16.21.12.png>)
-
-See image: [New Galaxy history](<assembly/Screenshot 2025-10-02 at 16.21.12.png>).
-
+1. Use the "Copy this history" function to make a copy of the history. ([Image: "Copy this history"](<assembly/Screenshot 2025-10-02 at 09.56.25.png>))
+2. Choose a suitable name for this new history (e.g. "SWBio Bacterial genome assembly long reads"). ([Image: Choose a name](<assembly/Screenshot 2025-10-02 at 16.20.41.png>))
+3. Now you can see the new history in the Galaxy website. ([Image: New Galaxy history](<assembly/Screenshot 2025-10-02 at 16.21.12.png>))
 
 ### Hands on: get the long sequence reads
 
 The long Oxford Nanopore sequence reads for this bacterial genome are in the Sequence Read Archive (SRA)
-under accession number SRR15305418.
+under accession number SRR30037665.
 
-![Getting the sequence reads from SRA into Galaxy](<assembly/Screenshot 2025-10-02 at 16.22.11.png>)
-
-See image: [Getting the sequence reads from SRA into Galaxy](<assembly/Screenshot 2025-10-02 at 16.22.11.png>).
+- Use the [Download and Extract Reads in FASTQ] tool to get SRR30037665 data. ([Image: Getting the data](<assembly/Screenshot 2025-10-02 at 16.22.11.png>))
+- 
 
 
 
