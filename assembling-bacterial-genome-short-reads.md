@@ -132,6 +132,8 @@ Probably the most informative thing to look at first is the "Cumulative length" 
 
 ![QUAST results](<assembly/Screenshot 2025-10-01 at 12.01.36.png>)
 
+See image: [QUAST results](<assembly/Screenshot 2025-10-01 at 12.01.36.png>).
+
 The slightly steeper gradient for the scaffolds indicates that the scaffolds are, on average, slightly bigger than the contigs. This is because several contigs have been combined into scaffolds. The gap between two contigs is padded with "N"s.
 
 ## Questions
