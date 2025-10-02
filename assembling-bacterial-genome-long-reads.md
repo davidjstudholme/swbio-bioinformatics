@@ -19,12 +19,36 @@ short reads in addition to the long reads. So, let's save some time by re-using 
 ### Hands on: get the long sequence reads
 
 The long Oxford Nanopore sequence reads for this bacterial genome are in the Sequence Read Archive (SRA)
-under accession number SRR30037665.
+under accession number [SRR30037665](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR30037665&display=metadata).
 
-- Use the [Download and Extract Reads in FASTQ] tool to get SRR30037665 data. ([Image: Getting the data](<assembly/Screenshot 2025-10-02 at 16.22.11.png>))
-- 
+Note that the average length of these reads is 6904 bp, and there is a lot of cariation, with some reads being much longer.
+
+See image: [Summary stats for SRR30037665 at SRA](<assembly/Screenshot 2025-10-02 at 16.47.47.png>).
 
 
+- Use the [Download and Extract Reads in FASTQ](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsra_tools%2Ffastq_dump%2F3.1.1%2Bgalaxy1&version=latest) tool to get SRR30037665 data. ([Image: Getting the data](<assembly/Screenshot 2025-10-02 at 16.22.11.png>))
+- For "select input type", choose "SRR accession".
+- For "Accession", insert "SRR30037665".
+- Press **Run Tool**.
+
+Now we have the long reads in the Galaxy history. You can view the sequence reads in Galaxy.
+See image: ([SRR30037665 long reads in Galaxy](<assembly/Screenshot 2025-10-02 at 16.52.51.png>)). Feel free to edit the name of the dataset from "Single-end data (fastq-dump)" to something more informative like "SRR30037665 long ONT reads".
+
+### Assemble the short reads + long reads, using SPAdes
+
+Just like we did previously, we are going to use SPAdes as the tool for _de-novo_ genome assembly. This time we will input long reads in addition to the short reads that we inputted previously.
+
+- Find [SPAdes in Galaxy](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fnml%2Fspades%2Fspades%2F4.2.0%2Bgalaxy0&version=latest).
+- For "Operation mode", choose "Assembly and error correction".
+- For "Single-end or paired-end short-reads", choose "Paired-end: list of dataset pairs".
+- For "FASTA/FASTQ file(s): collection", choose the SRR15305418 TrimGalore results that you prepared earlier (i.e. short reads after QC).
+- Click on "Additional read files", and under "Nanopore reads", select the SRR30037665 long reads.
+- Under "Pipeline options", activate the "Isolate" option.
+- Press **Run Tool**.
+
+See image: [Running SPAdes with short + long reads](<assembly/Screenshot 2025-10-02 at 17.07.58.png>).
+
+  
 
 
 
