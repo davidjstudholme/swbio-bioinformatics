@@ -1,4 +1,4 @@
-# Assembling a bacterial genome sequence
+# Assembling a bacterial genome sequence - from short reads
 
 In this exercise, we are going to perform _de-novo_ assembly of a bacterial genome from short sequence reads. There are many different tools that we could use for genome assembly.
 We will use a very commonly-used software tool called SPAdes.
