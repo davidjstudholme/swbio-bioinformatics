@@ -84,7 +84,11 @@ We can visualise the graphical fragment assembly using Bandage. This helps to il
 
 ### Annotate the Flye-assembled genome sequence with Bakta
 
-![annotation/Galaxy86-[Bakta on data 61_ Plot of the annotation].svg](annotation/Galaxy86-[Bakta on data 61_ Plot of the annotation].svg)
+![annotation/Galaxy86-[Bakta on data 61_ Plot of the annotation].svg](<annotation/Galaxy86-[Bakta on data 61_ Plot of the annotation].svg>)
+
+
+### Visualise the Bakta annotation in genome viewer
+
 
 
 
