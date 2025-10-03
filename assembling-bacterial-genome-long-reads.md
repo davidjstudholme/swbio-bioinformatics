@@ -9,7 +9,6 @@ This produced a draft-quality genome sequence that was, unfortunately, fragmente
 
 ![Workflow for long reads](<assembly/Screenshot 2025-10-03 at 16.19.16.png>)
 
-
 In the following exercise, we will do assembly of only long reads, using an assembly tools called Flye.
 Flye is specifically designed to assemble long reads (such as Oxford Nanopore) rather than short reads (such as Illumina).
 
@@ -22,7 +21,8 @@ please see this [tutorial about using Unicycler in Galaxy](https://training.gala
 The long Oxford Nanopore sequence reads for this bacterial genome are in the Sequence Read Archive (SRA)
 under accession number [SRR30037665](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR30037665&display=metadata).
 
-Note that the average length of these reads is 6904 bp, and there is a lot of cariation, with some reads being much longer.
+Note that the average length of these reads is 6904 bp, and there is a lot of variation, with some reads being much longer. There are
+more than 155 thousand reads.
 
 See image: [Summary stats for SRR30037665 at SRA](<assembly/Screenshot 2025-10-02 at 16.47.47.png>).
 
@@ -46,6 +46,12 @@ See image: ([SRR30037665 long reads in Galaxy](<assembly/Screenshot 2025-10-02 a
 See image: [Running Filtlong in Galaxy](<assembly/Screenshot 2025-10-02 at 19.52.20.png>).
 
 Optionally, you could now use FastQC to assess the quality of the long reads before and after filtering.
+
+![assembly/ont-reads-before-filtlong.png](assembly/ont-reads-before-filtlong.png)
+
+![assembly/ont-reads-after-filtlong.png](assembly/ont-reads-after-filtlong.png)
+
+
 
 ### Assemble the filtered long reads, using Flye
 
@@ -74,6 +80,15 @@ We can visualise the graphical fragment assembly using Bandage. This helps to il
 |                 Assembly graph from long reads                                                              |   Assembly graph from short reads              |
 | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
 | ![Assembly graph from long reads](<assembly/Galaxy82-[Bandage Image on data 63_ Assembly Graph Image].jpg>) | ![Assembly graph from short reads](<assembly/Galaxy28-[Bandage Image on data 25_ Assembly Graph Image].jpg>) |
+
+
+### Annotate the Flye-assembled genome sequence with Bakta
+
+![annotation/Galaxy86-[Bakta on data 61_ Plot of the annotation].svg](annotation/Galaxy86-[Bakta on data 61_ Plot of the annotation].svg)
+
+
+
+
 
 
 
