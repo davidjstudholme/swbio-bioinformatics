@@ -4,31 +4,18 @@ Previously, we assembled the genome sequence of the bacterial strain _Xanthomona
 We assembled the genome sequence from about a million pairs of short Illumina sequence reads.
 This produced a draft-quality genome sequence that was, unfortunately, fragmented into hundreds of contigs.
 
-But, take a look at the genome sequence for this bacterium on the NCBI webpage at https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_041463625.1/.  
 
-Notice that the sequence has been fully assembled such that there are not hundreds of contigs - there are only three contigs:
+### The workflow for assembling long reads
 
-| Description  | Accession number | Length (bp) |
-| -----------  | ---------------- | ----------- |
-|   Chromosome |   CP167216.1     |  4,918,520  |	
-|  Plasmid p22 |   CP167218.1	    |	    22,244  |
-|  Plasmid p43 |   CP167217.1	    |	    43,254  |
-
-This begs the question: why is this genome assembly so much better than the one that we generated?
-The answer is that to achieve this much better assembly, I used a combination of short (Illumina) reads
-plus long (Oxford Nanopore) reads.
-
-To acheive this, I used a tool called Unicycler, which encompasses the SPAdes assembly tool, but also includes several other clever
-steps to optimise the assembly and to exploit the additional information contained in the long reads.
-
-If you are interested in knowing more, please see this [tutorial about using Unicycler in Galaxy](https://training.galaxyproject.org/topics/assembly/tutorials/unicycler-assembly/tutorial.html).
-We do not have time to complete that process today, but feel free to try it on Thursday or Friday if you wish.
+![Workflow for long reads](<assembly/Screenshot 2025-10-03 at 16.19.16.png>)
 
 
 In the following exercise, we will do assembly of only long reads, using an assembly tools called Flye.
 Flye is specifically designed to assemble long reads (such as Oxford Nanopore) rather than short reads (such as Illumina).
-It can be advantageous to combine short reads plus long reads in the assembly. But these days, it is usually possible to generate a high-quality
-assembly from only long reads.
+
+It can be advantageous to combine short reads plus long reads in the assembly.
+If you are interested in knowing more about such a hybrid approach to assembly,
+please see this [tutorial about using Unicycler in Galaxy](https://training.galaxyproject.org/topics/assembly/tutorials/unicycler-assembly/tutorial.html).
 
 ### Hands on: get the long sequence reads
 
