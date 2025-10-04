@@ -47,9 +47,17 @@ See image: [Running Filtlong in Galaxy](<assembly/Screenshot 2025-10-02 at 19.52
 
 Optionally, you could now use FastQC to assess the quality of the long reads before and after filtering.
 
-![assembly/ont-reads-before-filtlong.png](assembly/ont-reads-before-filtlong.png)
 
-![assembly/ont-reads-after-filtlong.png](assembly/ont-reads-after-filtlong.png)
+|                   Quality scores before QC                                        |    Quality scores after QC              |
+|   ------------------------------------------------------------------------------  |   ------------------------------------- |
+| ![assembly/ont-reads-before-filtlong.png](assembly/ont-reads-before-filtlong.png) | ![assembly/ont-reads-after-filtlong.png](assembly/ont-reads-after-filtlong.png) |
+
+|                   Read lengths  before QC                                        |    Read lengths after QC              |
+|   ------------------------------------------------------------------------------  |   ------------------------------------- |
+| ![assembly/lengths-before.png](assembly/lengths-before.png) |   ![assembly/lengths-after.png](assembly/lengths-after.png) | 
+
+
+
 
 
 
