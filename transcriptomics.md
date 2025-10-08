@@ -63,23 +63,17 @@ For this tutorial, we will analyse a subset of **four samples** (one replicate p
 
 ---
 
-## Step 1: Import the data
+### Hands on: Import the data
 
-1. Go to **Get Data → NCBI SRA Tools → Faster Download and Extract Reads in FASTQ**.
-2. Enter the accession number (e.g. `SRR14923947`).
-3. Check **Paired-end** if the data are paired.
-4. Run the job — two FASTQ files (`_1` and `_2`) will appear in your history.
-5. Repeat for all four SRR IDs.
+1. Navigate to the "[Download and Extract Reads in FASTQ](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsra_tools%2Ffastq_dump%2F3.1.1%2Bgalaxy1&version=latest)" tool in Galaxy.
+2. Enter the accession number "SRR14923947".
+4. Start the job by pressing **Run Tool**. 
+5. Repeat for the other SRA accessions: SRR14923949, SRR14923950 and SRR14923951.
 6. Rename datasets for clarity:
-```
 
-Pc_R1.fastq.gz
-Pc_R2.fastq.gz
-PcQ_R1.fastq.gz
-PcQ_R2.fastq.gz
+SRR14923947 -> Pc_R1.fastq.gz and Pc_R2.fastq.gz
+SRR14923949 -> PcQ_R1.fastq.gz and PcQ_R2.fastq.gz
 ...
-
-```
 
 ---
 
@@ -95,7 +89,7 @@ PcQ_R2.fastq.gz
 
 ---
 
-## ✂️ Step 3: Trimming
+## Step 3: Trimming
 
 1. Use **fastp**:
 - Input: paired FASTQ files.
