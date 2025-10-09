@@ -65,14 +65,27 @@ For this tutorial, we will analyse a subset of **four samples** (one replicate p
 
 ### Hands on: Import the data
 
-1. Navigate to the "[Download and Extract Reads in FASTQ](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsra_tools%2Ffastq_dump%2F3.1.1%2Bgalaxy1&version=latest)" tool in Galaxy.
-2. Enter the accession number "SRR14923947".
-4. Start the job by pressing **Run Tool**. 
-5. Repeat for the other SRA accessions: SRR14923949, SRR14923950 and SRR14923951.
-6. Rename datasets for clarity:
+To ensure that things run quickly and smoothly, I have prepared a subset of the RNA-seq data for use in this computer practical.
+If we used the entire original dataset, some steps would take a lot longer to run.
 
-SRR14923947 -> Pc_R1.fastq.gz and Pc_R2.fastq.gz
-SRR14923949 -> PcQ_R1.fastq.gz and PcQ_R2.fastq.gz
+The FASTQ-formatted files, containing the RNA-seq sequence reads, can be found at Zenodo:
+
+https://zenodo.org/records/17301354/files/Pc.1.fq.gz
+https://zenodo.org/records/17301354/files/Pc.2.fq.gz
+https://zenodo.org/records/17301354/files/PcQ.1.fq.gz
+https://zenodo.org/records/17301354/files/PcQ.2.fq.gz
+https://zenodo.org/records/17301354/files/PcRKN.1.fq.gz
+https://zenodo.org/records/17301354/files/PcRKN.2.fq.gz
+https://zenodo.org/records/17301354/files/PcRKNQ.1.fq.gz
+https://zenodo.org/records/17301354/files/PcRKNQ.2.fq.gz
+
+You will now upload these files directly from Zenodo into Galaxy:
+
+- Click on the **Upload** button, near the top-left of the Galaxy web page. (See the [Upload button](<rna-seq/Screenshot 2025-10-09 at 15.06.15.png>).)
+- Select "Paste / Fetch data" (See the [Paste / Fecth data button](<rna-seq/Screenshot 2025-10-09 at 14.55.30.png>).)
+- Paste the Zenodo web links. (See the [pasted web links](<rna-seq/Screenshot 2025-10-09 at 14.55.30.png>).)
+- Press **Start**. (See the [Start button](<rna-seq/Screenshot 2025-10-09 at 14.55.30.png>).)
+
 ...
 
 ---
