@@ -89,7 +89,10 @@ You will now upload these files directly from Zenodo into Galaxy:
 - Press **Start**. (See the [Start button](<rna-seq/Screenshot 2025-10-09 at 14.55.30.png>).)
 - Press **Close**. (See the [Close button](<rna-seq/Screenshot 2025-10-09 at 14.57.58.png>).)
 
-...
+The FASTQ files will appear in your Galaxy history:
+
+![Galaxy history, showing FASTQ files](<rna-seq/Screenshot 2025-10-09 at 15.13.19.png>)
+
 
 ---
 
