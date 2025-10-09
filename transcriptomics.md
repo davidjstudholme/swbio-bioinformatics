@@ -136,7 +136,7 @@ instead of fastp; there is always more than one tool to choose from!
 > For simplicity and speed, we’ll use *alignment-free* quantification.
 
 1. Obtain the *P. chlamydosporia* transcriptome FASTA file:
-- Download from Ensembl Fungi or NCBI RefSeq.
+- Download from https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/411/695/GCA_000411695.3_PcB1v3/GCA_000411695.3_PcB1v3_rna_from_genomic.fna.gz.
 - Upload to Galaxy.
 2. Use **Salmon index** to build a transcriptome index (only once).
 3. Run **Salmon quant** for each sample:
