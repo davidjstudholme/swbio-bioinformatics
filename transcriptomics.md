@@ -91,15 +91,21 @@ You will now upload these files directly from Zenodo into Galaxy:
 
 The FASTQ files will appear in your Galaxy history:
 
-![Galaxy history, showing FASTQ files](<rna-seq/Screenshot 2025-10-09 at 15.13.19.png>)
+See image: [Galaxy history, showing FASTQ files](<rna-seq/Screenshot 2025-10-09 at 15.13.19.png>).
 
 
 ---
 
-## Step 2: Quality control
+## Hands on: Quality control
 
-1. Run **FastQC** on all FASTQ files.
-2. Use **MultiQC** to aggregate the reports.
+1. Run [FastQC](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffastqc%2Ffastqc%2F0.74%2Bgalaxy1&version=latest) on all FASTQ files.
+See image: [Running FastQC on all the FASTQ files](<rna-seq/Screenshot 2025-10-09 at 15.19.36.png>). 
+
+2. Use [MultiQC](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmultiqc%2Fmultiqc%2F1.27%2Bgalaxy3&version=latest) to aggregate the FastQC reports.
+See image: [Running MultiQC on the FastQC results](<rna-seq/Screenshot 2025-10-09 at 15.45.54.png>).
+
+
+   
 
 **Questions:**
 - Are there adapters present?
@@ -108,16 +114,20 @@ The FASTQ files will appear in your Galaxy history:
 
 ---
 
-## Step 3: Trimming
+## Hands on: Trimming
 
-1. Use **fastp**:
-- Input: paired FASTQ files.
+1. Use [fastp](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffastp%2Ffastp%2F1.0.1%2Bgalaxy2&version=latest):
+- See image: [Runnning fastp in Galaxy](<rna-seq/Screenshot 2025-10-09 at 16.05.36.png>).
+- Select the 
 - Output: trimmed reads.
 - Options:
   - Detect adapters automatically.
   - Minimum length = 30 bp.
 2. Run **FastQC** + **MultiQC** again on the trimmed reads.
 3. Confirm that adapter content and low-quality bases are reduced.
+
+Note that we could have used [TrimGalore](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftrim_galore%2Ftrim_galore%2F0.6.10%2Bgalaxy0&version=latest)
+instead of fastp; there is always more than one tool to choose from!
 
 ---
 
