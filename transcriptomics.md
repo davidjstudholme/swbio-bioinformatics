@@ -70,6 +70,7 @@ If we used the entire original dataset, some steps would take a lot longer to ru
 
 The FASTQ-formatted files, containing the RNA-seq sequence reads, can be found at Zenodo:
 
+```
 https://zenodo.org/records/17301354/files/Pc.1.fq.gz
 https://zenodo.org/records/17301354/files/Pc.2.fq.gz
 https://zenodo.org/records/17301354/files/PcQ.1.fq.gz
@@ -78,6 +79,7 @@ https://zenodo.org/records/17301354/files/PcRKN.1.fq.gz
 https://zenodo.org/records/17301354/files/PcRKN.2.fq.gz
 https://zenodo.org/records/17301354/files/PcRKNQ.1.fq.gz
 https://zenodo.org/records/17301354/files/PcRKNQ.2.fq.gz
+```
 
 You will now upload these files directly from Zenodo into Galaxy:
 
@@ -85,6 +87,7 @@ You will now upload these files directly from Zenodo into Galaxy:
 - Select "Paste / Fetch data" (See the [Paste / Fecth data button](<rna-seq/Screenshot 2025-10-09 at 14.55.30.png>).)
 - Paste the Zenodo web links. (See the [pasted web links](<rna-seq/Screenshot 2025-10-09 at 14.55.30.png>).)
 - Press **Start**. (See the [Start button](<rna-seq/Screenshot 2025-10-09 at 14.55.30.png>).)
+- Press **Close**. (See the [Close button](<rna-seq/Screenshot 2025-10-09 at 14.57.58.png>).)
 
 ...
 
