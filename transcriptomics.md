@@ -102,20 +102,45 @@ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v
    - Reference genome: The FASTA-formatted *Xoo* reference genome that you uploaded to Galaxy in the previous step.   
    - Output: BAM alignment files  
 
+Now we have BAM files that contain the RNA-seq reads against the reference genome sequence. Optionally, at this point, we could visualise the alignments
+using a genome browser such as [IGV](https://igv.org/). 
+
 ---
 
 ## Hands on: Step 4 — Count reads per gene
 
-Use [featureCounts](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffeaturecounts%2Ffeaturecounts%2F2.1.1%2Bgalaxy0&version=latest)
-to summarize aligned reads per gene.
+Now that we have aligned the RNA-seq reads against the reference genome, next we need to quantify the results.
+The amount of reads aligned to a gene is a correlated with the abundance of the corresponding transcript in the biological sample.
+Our aim is to identify genes that are differentially expressed between the control versus the treated samples.
+Therefore, for each gene in the reference genome, we will count how many control-sample reads are aligned and how many treated-sample reads are aligned.
+That will enable us to compare the two samples and identify genes that show differences in control versus treated.
 
-- Input: BAM files  
-- Annotation: GFF3 file
-- Output: Gene count matrix  
+To acheive this, we will use a tool called
+[featureCounts](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffeaturecounts%2Ffeaturecounts%2F2.1.1%2Bgalaxy0&version=latest).
+
+In addition to the alignments of reads against the referece genome, we also need a file that specifies the coordinates of every gene on the reference genome.
+That file is in GFF3 format and can be obtained from the NCBI's FTP site at this URL:
 
 ```
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.gff.gz
 ```
+
+1. Upload the GFF3 file from NCBI into Galaxy (using Galaxy's **Upload** button).
+   - The GFF3 file will appear in your Galaxy history. [Image](<rna-seq/Screenshot 2025-10-10 130904.jpg>).
+   - Optionally, you can rename the GFF file in your Galaxy history
+2. Run featureCounts. [Image](<rna-seq/Screenshot 2025-10-10 131439.jpg>).
+   - Alignment files: BAM files  output from BowTie2
+   - Gene annotation file: GFF3 file that you uploaded in the previous step.
+   - Output: Gene count matrices.
+   - GFF feature type filter: "CDS".
+   - GFF gene identifier: "locus_tag".
+  
+After running featureCounts, your Galaxy history will contain two new files containing the read-counts for each gene.
+One file is for "control" and one is for "treatment". 
+You can see the contents of one of the two files in this [image](<rna-seq/Screenshot 2025-10-10 132421.jpg>).
+Remember that we want to *compare the two*. So, we need to somehow combine the two matrices into one.
+There are many ways that we could acheive this.
+One way is to use the [Join two datasets](https://usegalaxy.eu/?tool_id=join1&version=latest) tool in Galaxy.
 
 - Click on the **Upload** button.
 - Click on **Paste / Fetch data**.
@@ -128,7 +153,7 @@ One consists of read-counts for the control and the other table has read-counts 
 
 To compare treatment versus control, we need to combine the two tables into one.
 
-Use the [Join two datasets](https://usegalaxy.eu/?tool_id=join1&version=latest) tool.
+Use 
 
 
 
