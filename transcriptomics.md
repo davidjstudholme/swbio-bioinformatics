@@ -87,7 +87,7 @@ For this step, we first need to obtain the *Xanthomonas oryzae* pv. *oryzae* ref
 The file can be obtained from the the NCBI, via their FTP site, with this URL:
 
 ```
-https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.fna.gz`
+https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.fna.gz
 ```
 
 1. Get the reference genome sequence from NCBI, into Galaxy ([image](<rna-seq/Screenshot 2025-10-10 121604.jpg>)):
