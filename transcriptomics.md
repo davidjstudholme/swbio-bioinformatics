@@ -72,7 +72,7 @@ Run **FastQC** on the paired-end collection.
    - You can import them from Galaxy’s **“Reference Data”** section or from ENA/NCBI:
      - Genome: [[NCBI link, e.g. `GCF_000007615.1](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.fna.gz)`]([https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000007615.1/](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.fna.gz))
      - Annotation: Corresponding GFF3 file.
-2. Run **HISAT2** (or another aligner such as Bowtie2 or STAR):
+2. Run **BowTie2**:
    - Input: The paired-end collection  
    - Reference genome: *Xoo* FASTA  
    - Output: BAM alignment files  
@@ -84,9 +84,18 @@ Run **FastQC** on the paired-end collection.
 Use **featureCounts** to summarize aligned reads per gene.
 
 - Input: BAM files  
-- Annotation: GFF3 file  
+- Annotation: GFF3 file
 - Output: Gene count matrix  
 
+```
+https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.gff.gz
+```
+
+- Click on the **Upload** button.
+- Click on **Paste / Fetch data**.
+- Insert the URL for the GFF3 file and press **Start**.
+- When the file turns green, you can press **Close**.
+- 
 ---
 
 ## Hands on: Step 5 — Identify differentially expressed genes
