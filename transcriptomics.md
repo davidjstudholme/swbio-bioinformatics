@@ -54,7 +54,7 @@ https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_2.fq.gz
 
 ### To import the data in Galaxy:
 1. Go to the [Galaxy webserver](https://usegalaxy.eu).  
-2. From the top menu, choose **“Upload Data.”**
+2. From the Galaxy menu, on the left of the page, choose **“Upload”**.
 3. Click the **“Paste/Fetch Data”** tab and paste the four Zenodo URLs listed above into the box (one per line). [Image](<rna-seq/Screenshot 2025-10-10 112850.jpg>).  
 5. Click **“Start.”**
 6. Wait until all datasets turn green (completed). [Image](<rna-seq/Screenshot 2025-10-10 112925.jpg>).
@@ -81,16 +81,25 @@ Run **FastQC** on the paired-end collection.
 
 ---
 
-## Hands on: Step 3 — Map reads to the reference genome
+## Hands on: Step 3 — Align RNA-seq reads against a reference genome
 
-1. Get the *Xanthomonas oryzae* pv. *oryzae* reference genome (FASTA) and annotation (GFF/GTF).  
-   - You can import them from Galaxy’s **“Reference Data”** section or from ENA/NCBI:
-     - Genome: [[NCBI link, e.g. `GCF_000007615.1](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.fna.gz)`]([https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000007615.1/](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.fna.gz))
-     - Annotation: Corresponding GFF3 file.
+For this step, we first need to obtain the *Xanthomonas oryzae* pv. *oryzae* reference genome (in FASTA format).
+The file can be obtained from the the NCBI, via their FTP site, with this URL:
+
+```
+https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.fna.gz`
+```
+
+1. Get the reference genome sequence from NCBI, into Galaxy ([image](<rna-seq/Screenshot 2025-10-10 121604.jpg>)):
+   - Click on the **Upload** button near the top-left of the Galaxy page.
+   - Click on **Paste / Fetch data**.
+   - Copy and paste the URL (see above) into the box.
+   - Press **Start**.
+   - The reference genome sequence will appear in your Galaxy history. You can view it like in this [image](<rna-seq/Screenshot 2025-10-10 122133.jpg>).
+   - Optionally, you could edit the name of the reference genome dataset, like in this [image](<rna-seq/Screenshot 2025-10-10 122223.jpg>).
 2. Run [BowTie2](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbowtie2%2Fbowtie2%2F2.5.4%2Bgalaxy0&version=latest):
-3. 
-   - Input: The paired-end collection  
-   - Reference genome: *Xoo* FASTA  
+   - Input: The paired-end collection of sequence reads output from fastp. [Image](<rna-seq/Screenshot 2025-10-10 122353.jpg>).  
+   - Reference genome: The FASTA-formatted *Xoo* reference genome that you uploaded to Galaxy in the previous step.   
    - Output: BAM alignment files  
 
 ---
