@@ -205,14 +205,71 @@ Here, I will illustrate the steps using a MS Excel spreadsheet. But, you could p
 - Do any correspond to known virulence factors, secretion systems, or regulatory proteins?  
 - Explore functions using gene names or cross-referencing with databases such those found at NCBI or KEGG or UniProt.
 
+You can interactively explore the data by visualing the BAM-formatted alignments in the IGV genome browser:
+
+- Download the two BAM files and there accompanying index files from your Galaxy history. [Image](<rna-seq/Screenshot 2025-10-10 192109.jpg>).
+- The four files should now be in your Downloads folder. [Image](<rna-seq/Screenshot 2025-10-10 192306.jpg>).
+- Rename the files to something more informative and simple (`control.bam`, etc.). [Image](<rna-seq/Screenshot 2025-10-10 192652.jpg>).
+- Download the reference genome sequence and the GFF3 annotation from the NCBI FTP site (see URLs above). [Image](<rna-seq/Screenshot 2025-10-10 192954.jpg>).
+- Navigate your web-brower to [https://igv.org/app/](https://igv.org/app/) to open the IGV web application.
+- Use the **Genome->Local File** menu item to load the FASTA-formatted reference genome sequence into IGV.
+- Use the **Tracks->Local File** menu item to load the GFF3-formatted annotation into IGV.
+- Use the **Tracks->Local File** menu item to load the two BAM files and their accomapnying BAI files. [Image](<rna-seq/Screenshot 2025-10-10 193255.jpg>).
+- Use the zoom tool near the top-right of the IGV page to zoom in on any part of the genome. It should look something like this [image](<rna-seq/Screenshot 2025-10-10 193518.jpg>). Check that you undertsnad what you are looking at. Ask, if you are unsure.
+- Choose some differentially expressed genes from the spreadhseet. [Image](<rna-seq/Screenshot 2025-10-10 193713.jpg>).
+- Try to locate those genes in the IGV browser and notice the differening abundances of RNA-seq reads at those genes. E.g. see this [image](<rna-seq/Screenshot 2025-10-10 194211.jpg>).
+   - Gene _fecA_ clearly shows more abundant mRNA in the treatment than in the control. Locus tag XOO0901 corresponds to gene _fecA_.
+   - You can find out more about XOO0901 / _fecA_ at [https://www.ncbi.nlm.nih.gov/protein/?term=XOO0901](https://www.ncbi.nlm.nih.gov/protein/?term=XOO0901).
+   - Gene _glpQ_ clearly shows more abundant mRNA in the treatment than in the control. Locus tag XOO0902 corresponds to gene _glpQ_.
+   - You can find out more about XOO0902 / _glpQ_ at  [https://www.ncbi.nlm.nih.gov/protein/?term=XOO0902](https://www.ncbi.nlm.nih.gov/protein/?term=XOO0902).
+- Further examples of differentially expressed genes can be seen in the example below.
+   - Can you find a gene whose transcription is _increased_ in the treatment versus the control?
+   - Can you find a gene whose transcription is _decreased_ in the treatment versus the control?
+
+![Example DEGs visualised in IGV](<rna-seq/Screenshot 2025-10-10 194555.jpg>)
+
+
 ## Summary
 
 You have successfully:
-- Imported RNA-seq data from Zenodo into Galaxy  
-- Performed read QC and alignment  
-- Quantified gene expression  
-- Identified differentially expressed genes between two bacterial conditions  
+- Imported RNA-seq data from Zenodo into Galaxy.  
+- Performed read QC and alignment.  
+- Quantified gene expression.
+- Identified differentially expressed genes between two bacterial conditions.
+- Visualised and examined examples of differentially expressed genes in the IGV browser.
 
-This workflow mirrors a real research scenario, but much simplified for clarity and speed.
+## ⚠️ Disclaimer — Interpreting results without replicates
+
+In this exercise, we are working with **only one RNA-seq sample per condition** (one control and one treatment).  
+This simplified setup makes the workflow fast and easy to follow, but it also means that:
+
+- We **cannot estimate biological variability**,  
+- and therefore **cannot perform valid statistical testing** for differential expression.
+
+In real research, **biological replicates** (typically three or more per condition) are essential.  
+Replicates allow tools such as **DESeq2** and **edgeR** to model natural variation in gene expression and to identify genes that are *significantly* differentially expressed rather than simply showing random differences.
+
+Because we have no replicates here, any comparison between the two samples is **descriptive only**.  
+We can look at read counts and fold changes to see which genes *appear* more or less expressed, but these differences cannot be interpreted as statistically significant.
+
+### A note on normalization
+
+Raw read counts are influenced by factors such as:
+- total sequencing depth (number of reads per sample), and  
+- gene length (longer genes naturally produce more reads).
+
+To make counts comparable across samples, RNA-seq analyses normally include a **normalization** step.  
+Different tools use different methods:
+- DESeq2: median of ratios (size-factor normalization)  
+- edgeR: trimmed mean of M-values (TMM)  
+- TPM/RPKM: length and library-size normalization for exploratory analysis  
+
+In this simplified example, we are inspecting **raw featureCounts output**.  
+If the two libraries have very different total read depths, fold changes may be misleading. In this example, we started with the same numer of sequence reads (2,000,000) for both samples; so, we can get away without normalising in this case.
+
+**Conclusion:**  
+This session demonstrates *how* RNA-seq data are processed and compared, not *how to make statistically valid biological conclusions*.  
+The concepts you learn here — mapping, counting, combining, and interpreting data — are the foundation for more rigorous analyses once replicates and normalization are added.
+
 
 ---
