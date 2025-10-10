@@ -32,7 +32,7 @@ You will import **two samples** (paired-end FASTQ files):
 | Treatment (M23_15) | [🔗 Zenodo link for R1](https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_1.fq.gz?download=1) | [🔗 Zenodo link for R2](https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_2.fq.gz?download=1) |
 
 ### To import the data in Galaxy:
-1. Go to [your Galaxy server](https://usegalaxy.eu).  
+1. Go to the [Galaxy webserver](https://usegalaxy.eu).  
 2. From the top menu, choose **“Upload Data.”**
 3. Click the **“Paste/Fetch Data”** tab.  
 4. Paste the four Zenodo URLs listed above into the box (one per line).  
