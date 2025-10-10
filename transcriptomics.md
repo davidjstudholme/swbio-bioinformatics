@@ -55,27 +55,29 @@ https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_2.fq.gz
 ### To import the data in Galaxy:
 1. Go to the [Galaxy webserver](https://usegalaxy.eu).  
 2. From the top menu, choose **“Upload Data.”**
-3. Click the **“Paste/Fetch Data”** tab.  
-4. Paste the four Zenodo URLs listed above into the box (one per line). [Image](<rna-seq/Screenshot 2025-10-10 112850.jpg>).  
+3. Click the **“Paste/Fetch Data”** tab and paste the four Zenodo URLs listed above into the box (one per line). [Image](<rna-seq/Screenshot 2025-10-10 112850.jpg>).  
 5. Click **“Start.”**
-6. Wait until all datasets turn green (completed). [Image](<rna-seq/Screenshot 2025-10-10 112925.jpg).
+6. Wait until all datasets turn green (completed). [Image](<rna-seq/Screenshot 2025-10-10 112925.jpg>).
 7. The four files will appear in your Galaxy history. [Image](<rna-seq/Screenshot 2025-10-10 114212.jpg>).
 8. Rename the datasets for clarity (e.g. `control_R1`, `control_R2`, `treatment_R1`, `treatment_R2`). [Image](<rna-seq/Screenshot 2025-10-10 114409.jpg>).
 9. Build a **paired dataset collection**:
-   - Select all four FASTQs. {Image](<rna-seq/Screenshot 2025-10-10 114613.jpg>).
+   - Select all four FASTQs. [Image](<rna-seq/Screenshot 2025-10-10 114613.jpg>).
    - Click **“Build List of Dataset Pairs”**.
    - Check that the datasets are paired correctly, as in this [image](<rna-seq/Screenshot 2025-10-10 114641.jpg>).  
-   - Give the collection a suitable name, e.g. `RNA-seq paired reads`. [Image](<rna-seq/Screenshot 2025-10-10 114827.jpg>).
-
+   - Give the collection a suitable name, e.g. `RNA-seq paired reads`. [Image](<rna-seq/Screenshot 2025-10-10 114827.jpg>) and press **Build**.
+   - The new collection will appear in your Galaxy history, looking something like this [image](<rna-seq/Screenshot 2025-10-10 114917.jpg>).
 ---
 
 ## Hands on: Step 2 — Quality control
 Run **FastQC** on the paired-end collection.
 
-- Tool: **FastQC**  
-- Input: Your paired-end dataset collection  
+- Tool: [FastQC](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffastqc%2Ffastqc%2F0.74%2Bgalaxy1&version=latest)  
+- Input: Your paired-end dataset collection. [Image](<rna-seq/Screenshot 2025-10-10 115047.jpg>).  
 - Output: Inspect the HTML reports for quality, GC content, adapter contamination, etc.  
-- Optional: Run **fastp** to filter-out poor data.
+- Run **fastp** to filter-out poor data. [Image](<rna-seq/Screenshot 2025-10-10 120653.jpg>).
+   - Input: Collection of paired RNA-seq sequencing reads.
+   - Use the default settings for all other options.
+   - Output: a new collection called something like `fastp on collection 9: Paired-end output`. This contains the trimmed, filtered, paired reads.
 
 ---
 
