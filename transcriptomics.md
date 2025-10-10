@@ -10,7 +10,14 @@ You will:
 3. Map reads to the reference genome  
 4. Quantify gene expression  
 5. Identify differentially expressed genes  
-6. Interpret the results in a biological context  
+6. Interpret the results in a biological context
+
+Here is an overview of the Galaxy workflow:
+
+![Galaxy workflow for RNA-seq exercise](<rna-seq/Screenshot 2025-10-10 202711.jpg>)
+
+View image: [Galaxy workflow for RNA-seq exercise](<rna-seq/Screenshot 2025-10-10 202711.jpg>).
+
 
 ---
 
