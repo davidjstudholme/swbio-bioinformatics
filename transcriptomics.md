@@ -72,7 +72,8 @@ Run **FastQC** on the paired-end collection.
    - You can import them from Galaxy’s **“Reference Data”** section or from ENA/NCBI:
      - Genome: [[NCBI link, e.g. `GCF_000007615.1](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.fna.gz)`]([https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000007615.1/](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.fna.gz))
      - Annotation: Corresponding GFF3 file.
-2. Run **BowTie2**:
+2. Run [BowTie2](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbowtie2%2Fbowtie2%2F2.5.4%2Bgalaxy0&version=latest):
+3. 
    - Input: The paired-end collection  
    - Reference genome: *Xoo* FASTA  
    - Output: BAM alignment files  
@@ -81,7 +82,8 @@ Run **FastQC** on the paired-end collection.
 
 ## Hands on: Step 4 — Count reads per gene
 
-Use **featureCounts** to summarize aligned reads per gene.
+Use [featureCounts](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffeaturecounts%2Ffeaturecounts%2F2.1.1%2Bgalaxy0&version=latest)
+to summarize aligned reads per gene.
 
 - Input: BAM files  
 - Annotation: GFF3 file
