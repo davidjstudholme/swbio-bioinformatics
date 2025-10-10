@@ -1,4 +1,4 @@
-# 🧬 RNA-seq Analysis of *Xanthomonas oryzae*
+# RNA-seq Analysis of *Xanthomonas oryzae*
 
 ## Learning goals
 In this exercise, you will perform a complete RNA-seq analysis comparing *Xanthomonas oryzae* pv. *oryzae* under two conditions to identify differentially expressed genes.
@@ -28,8 +28,18 @@ You will import **two samples** (paired-end FASTQ files):
 
 | Condition | Read 1 (R1) | Read 2 (R2) |
 |------------|-------------|-------------|
-| Control (without_15) | [🔗 Zenodo link for R1](https://zenodo.org/records/17311933/files/without_15.SRR1582666.subsampled_1.fq.gz) | [🔗 Zenodo link for R2](https://zenodo.org/records/17311933/files/without_15.SRR1582666.subsampled_2.fq.gz) |
-| Treatment (M23_15) | [🔗 Zenodo link for R1](https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_1.fq.gz?download=1) | [🔗 Zenodo link for R2](https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_2.fq.gz?download=1) |
+| Control (without_15) | [🔗 Link for R1](https://zenodo.org/records/17311933/files/without_15.SRR1582666.subsampled_1.fq.gz) | [🔗 Link for R2](https://zenodo.org/records/17311933/files/without_15.SRR1582666.subsampled_2.fq.gz) |
+| Treatment (M23_15) | [🔗 Link for R1](https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_1.fq.gz) | [🔗 Link for R2](https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_2.fq.gz) |
+
+For convenient copy-and-paste, here are those links:
+
+```
+https://zenodo.org/records/17311933/files/without_15.SRR1582666.subsampled_1.fq.gz
+https://zenodo.org/records/17311933/files/without_15.SRR1582666.subsampled_2.fq.gz
+https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_1.fq.gz
+https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_2.fq.gz
+```
+
 
 ### To import the data in Galaxy:
 1. Go to the [Galaxy webserver](https://usegalaxy.eu).  
