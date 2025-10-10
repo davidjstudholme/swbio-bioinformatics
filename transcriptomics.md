@@ -18,7 +18,7 @@ You will:
 *Xanthomonas oryzae* pv. *oryzae* (Xoo) is a bacterial pathogen that causes bacterial blight of rice.  
 In this study, RNA-seq was used to compare gene expression under two laboratory conditions that mimic different stages of infection or environmental stimuli.
 
-We will work with **downsampled data** (a few hundred thousand reads per sample) to make the analysis quick and manageable for classroom use.
+We will work with **downsampled data** (two million read-pairs per sample) to make the analysis quick and manageable for classroom use.
 
 ---
 
@@ -28,11 +28,11 @@ You will import **two samples** (paired-end FASTQ files):
 
 | Condition | Read 1 (R1) | Read 2 (R2) |
 |------------|-------------|-------------|
-| Control | [🔗 Zenodo link for R1](https://zenodo.org/record/XXXXX/files/Xoo_control_R1.fastq.gz) | [🔗 Zenodo link for R2](https://zenodo.org/record/XXXXX/files/Xoo_control_R2.fastq.gz) |
-| Treatment | [🔗 Zenodo link for R1](https://zenodo.org/record/YYYYY/files/Xoo_treatment_R1.fastq.gz) | [🔗 Zenodo link for R2](https://zenodo.org/record/YYYYY/files/Xoo_treatment_R2.fastq.gz) |
+| Control (without_15) | [🔗 Zenodo link for R1](https://zenodo.org/records/17311933/files/without_15.SRR1582666.subsampled_1.fq.gz) | [🔗 Zenodo link for R2](https://zenodo.org/records/17311933/files/without_15.SRR1582666.subsampled_2.fq.gz) |
+| Treatment (M23_15) | [🔗 Zenodo link for R1](https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_1.fq.gz?download=1) | [🔗 Zenodo link for R2](https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_2.fq.gz?download=1) |
 
 ### To import the data in Galaxy:
-1. Go to [your Galaxy server](https://usegalaxy.eu) (or your course instance).  
+1. Go to [your Galaxy server](https://usegalaxy.eu).  
 2. From the top menu, choose **“Upload Data.”**
 3. Click the **“Paste/Fetch Data”** tab.  
 4. Paste the four Zenodo URLs listed above into the box (one per line).  
