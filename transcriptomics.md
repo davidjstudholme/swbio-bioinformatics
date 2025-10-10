@@ -70,7 +70,7 @@ Run **FastQC** on the paired-end collection.
 
 1. Get the *Xanthomonas oryzae* pv. *oryzae* reference genome (FASTA) and annotation (GFF/GTF).  
    - You can import them from Galaxy’s **“Reference Data”** section or from ENA/NCBI:
-     - Genome: [NCBI link, e.g. `GCF_000007615.1`](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000007615.1/)
+     - Genome: [[NCBI link, e.g. `GCF_000007615.1](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.fna.gz)`]([https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000007615.1/](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/007/385/GCA_000007385.1_ASM738v1/GCA_000007385.1_ASM738v1_genomic.fna.gz))
      - Annotation: Corresponding GFF3 file.
 2. Run **HISAT2** (or another aligner such as Bowtie2 or STAR):
    - Input: The paired-end collection  
