@@ -235,6 +235,8 @@ You can interactively explore the data by visualing the BAM-formatted alignments
 
 ![Example DEGs visualised in IGV](<rna-seq/Screenshot 2025-10-10 194555.jpg>)
 
+View image: [Example DEGs visualised in IGV](<rna-seq/Screenshot 2025-10-10 194555.jpg>).
+
 
 ## Summary
 
