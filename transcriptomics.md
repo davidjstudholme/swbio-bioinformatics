@@ -71,8 +71,10 @@ https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_2.fq.gz
    - Select all four FASTQs. [Image](<rna-seq/Screenshot 2025-10-10 114613.jpg>).
    - Click **“Build List of Dataset Pairs”**.
    - Check that the datasets are paired correctly, as in this [image](<rna-seq/Screenshot 2025-10-10 114641.jpg>).  
-   - Give the collection a suitable name, e.g. `RNA-seq paired reads`. [Image](<rna-seq/Screenshot 2025-10-10 114827.jpg>) and press the Build button.
+   - Give the collection a suitable name, e.g. `RNA-seq paired reads`. [Image](<rna-seq/Screenshot 2025-10-10 114827.jpg>) and press the **Build** button.
    - The new collection will appear in your Galaxy history, looking something like this [image](<rna-seq/Screenshot 2025-10-10 114917.jpg>).
+
+     
 ---
 
 ## Hands on: Step 2 - Quality control
