@@ -184,19 +184,19 @@ Also, see the Galaxy training materials available [here](https://training.galaxy
 However, for most of us here, it will be sufficient today to take a much-simplified approach to illustrate the basic prinicples.
 Here, I will illustrate the steps using a MS Excel spreadsheet. But, you could perform the steps in a different platform, such as R.
 
-- Use the "disk" icon to download the matrix. [Image](<>).
-- This will download a file into your Download folder, called something like `Galaxy47-[Join two Datasets on data 40 and data 42].tabular`. [Image](<>).
-- Rename the file to something more sensible, like `read-counts.tsv`. [Image](<>).
-- Now import the file into your favourite spreadhseet software, e.g. MS Excel. [Image](<>).
-- Now that the data are imported, note that the third column is redundant [Before deletion](<>); so, delete that column.[After deletion](<>)
-- In the final column, add the formula: `=LOG([@treatment]/[@control])`. [Image](<>).
-- Now we can see log-ratios for all genes. [Image](<>).
-- Sort the data on the log-ratio column.  [Image](<>).
-- Re-name the columns and format the cells in the final column so it looks something like this [image](<>).
+- Use the "disk" icon to download the matrix. [Image](<rna-seq/Screenshot 2025-10-10 171505.jpg>).
+- This will download a file into your Download folder, called something like `Galaxy47-[Join two Datasets on data 40 and data 42].tabular`. [Image](<rna-seq/Screenshot 2025-10-10 171740.jpg>).
+- Rename the file to something more sensible, like `read-counts.tsv`. [Image](<rna-seq/Screenshot 2025-10-10 172221.jpg>).
+- Now import the file into your favourite spreadsheet software, e.g. MS Excel. [Image](<rna-seq/Screenshot 2025-10-10 172612.jpg>).
+- Now that the data are imported, note that the third column is redundant [Before deletion](<rna-seq/Screenshot 2025-10-10 172718.jpg>); so, delete that column. [After deletion](<rna-seq/Screenshot 2025-10-10 172917.jpg>)
+- In the final column, add the formula: `=LOG([@treatment]/[@control])`. [Image](<rna-seq/Screenshot 2025-10-10 173032.jpg>).
+- Now we can see log-ratios for all genes. [Image](<rna-seq/Screenshot 2025-10-10 173101.jpg>).
+- Sort the data on the log-ratio column. 
+- Re-name the columns and format the cells in the final column so it looks something like this [image](<rna-seq/Screenshot 2025-10-10 173624.jpg>).
 - Now, the most-differentially expressed genes are to be found at the top and the bottom of the spreadsheet.
-- Another way of looking at this is as a histogram showing the frequency distribution of the log-ratio. The differentially expressed genes are in the tails. [Image](<>).
-- Alternatively, you could plot the numbers of counts for control versus treatment, and identify the genes that diverge from the correlation. [Image](<>).
-- 
+- Another way of looking at this is as a histogram showing the frequency distribution of the log-ratio. The differentially expressed genes are in the tails. [Image](<rna-seq/Screenshot 2025-10-10 174412.jpg>).
+- Alternatively, you could plot the numbers of counts for control versus treatment, and identify the genes that diverge from the correlation. [Image](<rna-seq/Screenshot 2025-10-10 174103.jpg>).
+  
 ---
 
 ## Hands on: Step 6 — Interpretation
