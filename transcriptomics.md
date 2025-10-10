@@ -62,7 +62,7 @@ Run **FastQC** on the paired-end collection.
 - Tool: **FastQC**  
 - Input: Your paired-end dataset collection  
 - Output: Inspect the HTML reports for quality, GC content, adapter contamination, etc.  
-- Optional: Run **MultiQC** to summarize results.
+- Optional: Run **fastp** to filter-out poor data.
 
 ---
 
