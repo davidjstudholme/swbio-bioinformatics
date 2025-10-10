@@ -1,219 +1,132 @@
-# RNA-seq Analysis Tutorial (Galaxy Platform)
-### Using *Pochonia chlamydosporia* RNA-seq Data (BioProject [PRJNA741387](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA741387))
+# 🧬 RNA-seq Analysis of *Xanthomonas oryzae*
+
+## Learning goals
+In this exercise, you will perform a complete RNA-seq analysis comparing *Xanthomonas oryzae* pv. *oryzae* under two conditions to identify differentially expressed genes.
+
+You will:
+1. Import the provided RNA-seq data into Galaxy  
+2. Perform quality control (FastQC)  
+3. Map reads to the reference genome  
+4. Quantify gene expression  
+5. Identify differentially expressed genes  
+6. Interpret the results in a biological context  
+
+---
+
+## Biological background
+
+*Xanthomonas oryzae* pv. *oryzae* (Xoo) is a bacterial pathogen that causes bacterial blight of rice.  
+In this study, RNA-seq was used to compare gene expression under two laboratory conditions that mimic different stages of infection or environmental stimuli.
+
+We will work with **downsampled data** (a few hundred thousand reads per sample) to make the analysis quick and manageable for classroom use.
+
+---
+
+## Hands on: Step 1 — Import the provided RNA-seq data into Galaxy
+
+You will import **two samples** (paired-end FASTQ files):
+
+| Condition | Read 1 (R1) | Read 2 (R2) |
+|------------|-------------|-------------|
+| Control | [🔗 Zenodo link for R1](https://zenodo.org/record/XXXXX/files/Xoo_control_R1.fastq.gz) | [🔗 Zenodo link for R2](https://zenodo.org/record/XXXXX/files/Xoo_control_R2.fastq.gz) |
+| Treatment | [🔗 Zenodo link for R1](https://zenodo.org/record/YYYYY/files/Xoo_treatment_R1.fastq.gz) | [🔗 Zenodo link for R2](https://zenodo.org/record/YYYYY/files/Xoo_treatment_R2.fastq.gz) |
+
+### To import the data in Galaxy:
+1. Go to [your Galaxy server](https://usegalaxy.eu) (or your course instance).  
+2. From the top menu, choose **“Upload Data.”**
+3. Click the **“Paste/Fetch Data”** tab.  
+4. Paste the four Zenodo URLs listed above into the box (one per line).  
+5. Click **“Start.”**
+6. Wait until all datasets turn green (completed).  
+7. Rename the datasets for clarity (e.g. `control_R1`, `control_R2`, `treatment_R1`, `treatment_R2`).
+8. Build a **paired dataset collection**:
+   - Select all four FASTQs  
+   - Click **“Build List of Dataset Pairs”**  
+   - Pair R1/R2 correctly and name the collection, e.g. `Xoo_downsampled_reads`.
+
+---
+
+## Hands on: Step 2 — Quality control
+Run **FastQC** on the paired-end collection.
+
+- Tool: **FastQC**  
+- Input: Your paired-end dataset collection  
+- Output: Inspect the HTML reports for quality, GC content, adapter contamination, etc.  
+- Optional: Run **MultiQC** to summarize results.
+
+---
+
+## Hands on: Step 3 — Map reads to the reference genome
+
+1. Get the *Xanthomonas oryzae* pv. *oryzae* reference genome (FASTA) and annotation (GFF/GTF).  
+   - You can import them from Galaxy’s **“Reference Data”** section or from ENA/NCBI:
+     - Genome: [NCBI link, e.g. `GCF_000007615.1`](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000007615.1/)
+     - Annotation: Corresponding GFF3 file.
+2. Run **HISAT2** (or another aligner such as Bowtie2 or STAR):
+   - Input: The paired-end collection  
+   - Reference genome: *Xoo* FASTA  
+   - Output: BAM alignment files  
+
+---
+
+## Hands on: Step 4 — Count reads per gene
+
+Use **featureCounts** to summarize aligned reads per gene.
+
+- Input: BAM files  
+- Annotation: GFF3 file  
+- Output: Gene count matrix  
+
+---
+
+## Hands on: Step 5 — Identify differentially expressed genes
+
+Use **DESeq2** (or **edgeR**) for differential expression analysis.
+
+- Input: featureCounts matrix  
+- Factor: “Condition” (Control vs. Treatment)  
+- Output: Table of differentially expressed genes  
+
+Inspect:
+- `log2FoldChange`
+- `padj` (adjusted p-value)
+- Volcano plot or MA plot (optional)
+
+---
+
+## Hands on: Step 6 — Interpretation
+
+- Which genes are significantly upregulated in the treatment condition?  
+- Do any correspond to known virulence factors, secretion systems, or regulatory proteins?  
+- Explore functions using gene names or cross-referencing with databases such as KEGG or UniProt.
+
+---
+
+## Hands on: Optional clean-up
+
+When finished:
+- Delete intermediate datasets (e.g., raw FastQC reports, intermediate BAMs).  
+- Keep your `featureCounts` table and DESeq2 results for interpretation.  
+
+---
 
 ## Summary
 
-This tutorial walks you through:
-- Importing and processing real RNA-seq data.
-- Performing QC, trimming, and quantification.
-- Running differential expression analysis and interpreting results.
+You have successfully:
+- Imported RNA-seq data from Zenodo into Galaxy  
+- Performed read QC and alignment  
+- Quantified gene expression  
+- Identified differentially expressed genes between two bacterial conditions  
 
-You’ll finish with a clear view of how *P. chlamydosporia* responds to chitosan and nematode cues at the transcriptome level — all within Galaxy’s user-friendly, reproducible environment.
-
----
-
-## Learning objectives
-
-By the end of this exercise, you should be able to:
-
-1. Import public RNA-seq data from NCBI SRA into Galaxy.
-2. Perform quality control and trimming of Illumina paired-end reads.
-3. Quantify transcript abundance or align reads to a reference genome.
-4. Identify differentially expressed genes using DESeq2.
-5. Visualize and interpret results in the context of the experiment.
+This workflow mirrors a real research scenario, simplified for clarity and speed.
 
 ---
 
-## Background
+### Credits
 
-This dataset comes from **Suarez-Fernandez et al. (2021)**, who investigated how **chitosan** and **nematode egg** exposure affect gene expression in the fungus *Pochonia chlamydosporia*, a biological control agent of plant-parasitic nematodes.
-
-- **Organism:** *Pochonia chlamydosporia*
-- **Treatments:**  
-  - *Pc* — Control  
-  - *PcQ* — Chitosan  
-  - *PcRKN* — Nematode eggs  
-  - *PcRKNQ* — Chitosan + Nematode eggs
-- **Platform:** Illumina NovaSeq (paired-end, 150 bp)
-- **BioProject:** [PRJNA741387](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA741387)
-
-For this tutorial, we will analyse a subset of **four samples** (one replicate per condition).
-
-| Condition | SRR Accession | Label |
-|------------|---------------|-------|
-| Control | SRR14923947 | Pc |
-| Chitosan | SRR14923949 | PcQ |
-| Nematode eggs | SRR14923950 | PcRKN |
-| Eggs + Chitosan | SRR14923951 | PcRKNQ |
+- Data re-used from [BioProject PRJNA261679](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA261679)
+- Original study: Kim, S., Cho, Y. J., Song, E. S., Lee, S. H., Kim, J. G., & Kang, L. W. (2016). Time-resolved pathogenic gene expression analysis of the plant pathogen *Xanthomonas oryzae* pv. *oryzae*. *BMC Genomics*, **17**, 345. https://doi.org/10.1186/s12864-016-2657-7.
+- Prepared for the Graduate Bioinformatics Workshop, [University/Year].
 
 ---
-
-## What you’ll need
-
-- Access to [Galaxy Main](https://usegalaxy.org) (create a free account).  
-- Basic understanding of RNA-seq experimental design.  
-- The following Galaxy tools will be used:
-  - **Faster Download and Extract Reads in FASTQ** (from NCBI SRA)
-  - **FastQC**
-  - **MultiQC**
-  - **fastp** (or *Trim Galore!*)
-  - **Salmon quant** (alignment-free quantification)
-  - **DESeq2** (differential expression)
-  - *(optional)* **Heatmap**, **Volcano plot**, or **GOseq**
-
----
-
-### Hands on: Import the data
-
-To ensure that things run quickly and smoothly, I have prepared a subset of the RNA-seq data for use in this computer practical.
-If we used the entire original dataset, some steps would take a lot longer to run.
-
-The FASTQ-formatted files, containing the RNA-seq sequence reads, can be found at Zenodo:
-
-```
-https://zenodo.org/records/17301354/files/Pc.1.fq.gz
-https://zenodo.org/records/17301354/files/Pc.2.fq.gz
-https://zenodo.org/records/17301354/files/PcQ.1.fq.gz
-https://zenodo.org/records/17301354/files/PcQ.2.fq.gz
-https://zenodo.org/records/17301354/files/PcRKN.1.fq.gz
-https://zenodo.org/records/17301354/files/PcRKN.2.fq.gz
-https://zenodo.org/records/17301354/files/PcRKNQ.1.fq.gz
-https://zenodo.org/records/17301354/files/PcRKNQ.2.fq.gz
-```
-
-You will now upload these files directly from Zenodo into Galaxy:
-
-- Click on the **Upload** button, near the top-left of the Galaxy web page. (See the [Upload button](<rna-seq/Screenshot 2025-10-09 at 15.06.15.png>).)
-- Select "Paste / Fetch data" (See the [Paste / Fecth data button](<rna-seq/Screenshot 2025-10-09 at 14.55.30.png>).)
-- Paste the Zenodo web links. (See the [pasted web links](<rna-seq/Screenshot 2025-10-09 at 14.55.30.png>).)
-- Press **Start**. (See the [Start button](<rna-seq/Screenshot 2025-10-09 at 14.55.30.png>).)
-- Press **Close**. (See the [Close button](<rna-seq/Screenshot 2025-10-09 at 14.57.58.png>).)
-
-The FASTQ files will appear in your Galaxy history:
-
-See image: [Galaxy history, showing FASTQ files](<rna-seq/Screenshot 2025-10-09 at 15.13.19.png>).
-
-
----
-
-## Hands on: Quality control
-
-1. Run [FastQC](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffastqc%2Ffastqc%2F0.74%2Bgalaxy1&version=latest) on all FASTQ files.
-See image: [Running FastQC on all the FASTQ files](<rna-seq/Screenshot 2025-10-09 at 15.19.36.png>). 
-
-2. Use [MultiQC](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmultiqc%2Fmultiqc%2F1.27%2Bgalaxy3&version=latest) to aggregate the FastQC reports.
-See image: [Running MultiQC on the FastQC results](<rna-seq/Screenshot 2025-10-09 at 15.45.54.png>).
-
-
-   
-
-**Questions:**
-- Are there adapters present?
-- Are the read qualities good across all cycles?
-- Are there major differences between samples?
-
----
-
-## Hands on: Trimming
-
-1. Use [fastp](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffastp%2Ffastp%2F1.0.1%2Bgalaxy2&version=latest):
-- See image: [Runnning fastp in Galaxy](<rna-seq/Screenshot 2025-10-09 at 16.05.36.png>).
-- Select the 
-- Output: trimmed reads.
-- Options:
-  - Detect adapters automatically.
-  - Minimum length = 30 bp.
-2. Run **FastQC** + **MultiQC** again on the trimmed reads.
-3. Confirm that adapter content and low-quality bases are reduced.
-
-Note that we could have used [TrimGalore](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftrim_galore%2Ftrim_galore%2F0.6.10%2Bgalaxy0&version=latest)
-instead of fastp; there is always more than one tool to choose from!
-
----
-
-## Step 4: Quantify transcript abundance with Salmon
-
-> For simplicity and speed, we’ll use *alignment-free* quantification.
-
-1. Obtain the *P. chlamydosporia* transcriptome FASTA file:
-- Download from https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/411/695/GCA_000411695.3_PcB1v3/GCA_000411695.3_PcB1v3_rna_from_genomic.fna.gz.
-- https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/411/695/GCA_000411695.3_PcB1v3/GCA_000411695.3_PcB1v3_genomic.fna.gz
-- Upload to Galaxy.
-2. Use **Salmon index** to build a transcriptome index (only once).
-3. Run **Salmon quant** for each sample:
-- Input: trimmed read pairs.
-- Select the index you built.
-- Library type: *Automatic detection*.
-- Output: quantification directory for each sample.
-
-You should now have four quantification outputs, one per sample.
-
----
-
-## Step 5: Differential expression analysis (DESeq2)
-
-1. Create a **sample annotation table** as a small tabular file and upload it:
-```
-
-sample	condition
-Pc	control
-PcQ	chitosan
-PcRKN	eggs
-PcRKNQ	eggs_chitosan
-
-```
-2. Open the **DESeq2** tool in Galaxy.
-- Input type: Salmon quantifications.
-- Design factor: `condition`.
-- Run contrasts:
-  - `PcQ` vs `Pc` (effect of chitosan)
-  - `PcRKN` vs `Pc` (effect of eggs)
-  - `PcRKNQ` vs `Pc` (combined treatment)
-3. Review outputs:
-- **MA plot** (log2 fold change vs. mean expression)
-- **PCA plot**
-- **Results table** with log2 fold changes and adjusted p-values.
-
----
-
-## Step 6: Visualize and interpret
-
-- Use **Heatmap** or **Volcano plot** tools in Galaxy to visualize top genes.
-- Export DE gene tables and visualize in Excel or R if desired.
-- (Optional) Run **GOseq** or **clusterProfiler** for GO enrichment analysis.
-
-**Questions for discussion:**
-1. How do the samples cluster in the PCA plot?
-2. Which treatment has the strongest transcriptional response?
-3. Are redox-related or cell wall–related genes among the upregulated ones?
-4. How many genes are significantly different at FDR < 0.05?
-
----
-
-## Step 7: Report your findings
-
-Prepare a short report including:
-
-1. A brief summary of the workflow.
-2. Screenshots of the PCA and volcano plots.
-3. A table of the top 10 upregulated and downregulated genes.
-4. Interpretation of biological meaning (1–2 paragraphs).
-
----
-
-## Instructor notes
-
-- Use only four samples for a ~2-hour session. The full dataset (10 runs) can be assigned for independent practice.
-- Provide a shared Galaxy history or workflow that students can import:
-- **Get Data → fastp → FastQC/MultiQC → Salmon → DESeq2**
-- You may pre-upload the *P. chlamydosporia* reference FASTA and GTF to save time.
-- Optionally demonstrate how to **share histories** and **export workflows** in Galaxy.
-
----
-
-## References
-
-- **BioProject:** [PRJNA741387](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA741387)  
-- **Publication:** Suárez-Fernández, M., et al. (2021). *Chitosan modulates Pochonia chlamydosporia gene expression during its parasitic relationship with root-knot nematodes.* *Frontiers in Microbiology*, 12:722845.  
-- **Galaxy Training:** [RNA-seq reads to differential expression](https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-counts-to-genes/tutorial.html)
 
