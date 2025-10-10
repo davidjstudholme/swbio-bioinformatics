@@ -182,29 +182,28 @@ If you are seriously interested in performing RNA-seq analysis yourself as part 
 Also, see the Galaxy training materials available [here](https://training.galaxyproject.org/training-material/topics/transcriptomics/).
 
 However, for most of us here, it will be sufficient today to take a much-simplified approach to illustrate the basic prinicples.
+Here, I will illustrate the steps using a MS Excel spreadsheet. But, you could perform the steps in a different platform, such as R.
 
-Inspect:
-- `log2FoldChange`
-- `padj` (adjusted p-value)
-- Volcano plot or MA plot (optional)
-
+- Use the "disk" icon to download the matrix. [Image](<>).
+- This will download a file into your Download folder, called something like `Galaxy47-[Join two Datasets on data 40 and data 42].tabular`. [Image](<>).
+- Rename the file to something more sensible, like `read-counts.tsv`. [Image](<>).
+- Now import the file into your favourite spreadhseet software, e.g. MS Excel. [Image](<>).
+- Now that the data are imported, note that the third column is redundant [Before deletion](<>); so, delete that column.[After deletion](<>)
+- In the final column, add the formula: `=LOG([@treatment]/[@control])`. [Image](<>).
+- Now we can see log-ratios for all genes. [Image](<>).
+- Sort the data on the log-ratio column.  [Image](<>).
+- Re-name the columns and format the cells in the final column so it looks something like this [image](<>).
+- Now, the most-differentially expressed genes are to be found at the top and the bottom of the spreadsheet.
+- Another way of looking at this is as a histogram showing the frequency distribution of the log-ratio. The differentially expressed genes are in the tails. [Image](<>).
+- Alternatively, you could plot the numbers of counts for control versus treatment, and identify the genes that diverge from the correlation. [Image](<>).
+- 
 ---
 
 ## Hands on: Step 6 — Interpretation
 
 - Which genes are significantly upregulated in the treatment condition?  
 - Do any correspond to known virulence factors, secretion systems, or regulatory proteins?  
-- Explore functions using gene names or cross-referencing with databases such as KEGG or UniProt.
-
----
-
-## Hands on: Optional clean-up
-
-When finished:
-- Delete intermediate datasets (e.g., raw FastQC reports, intermediate BAMs).  
-- Keep your `featureCounts` table and DESeq2 results for interpretation.  
-
----
+- Explore functions using gene names or cross-referencing with databases such those found at NCBI or KEGG or UniProt.
 
 ## Summary
 
@@ -214,8 +213,6 @@ You have successfully:
 - Quantified gene expression  
 - Identified differentially expressed genes between two bacterial conditions  
 
-This workflow mirrors a real research scenario, simplified for clarity and speed.
+This workflow mirrors a real research scenario, but much simplified for clarity and speed.
 
 ---
-
-
