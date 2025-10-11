@@ -174,6 +174,7 @@ in Galaxy to align the fastp-treated _short_ reads against the assembled genome 
 - Use [lastz](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Flastz%2Flastz_wrapper_2%2F1.04.22%2Bgalaxy0&version=latest)
 to align the filtered _long_ reads against the assembled genome sequence.
 [Image](<assembly/Screenshot 2025-10-11 at 14.38.07.png>).
+- When the lastz and BowTie2 alignments have completed, download the BAM and BAI files and load these into the IGV genome browser, via the **Tracks->Local File** menu item.
 
 
 
