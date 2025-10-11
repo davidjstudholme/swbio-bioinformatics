@@ -102,6 +102,18 @@ We can visualise the graphical fragment assembly using Bandage. This helps to il
 
 
 
+## Optional Step 9: Visualising the reads aligned against the assembly
+
+If you have time, it can be interesting to align the original sequence reads against the assembled genome sequence. 
+This allows us to check for consistency between the final assembly versus the raw data from which it was inferred.
+
+Optionally, you can follow this procedure:
+
+- In Galaxy, use [BowTie2](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbowtie2%2Fbowtie2%2F2.5.4%2Bgalaxy0&version=latest) to align the Illumina sequence reads against the assembled genome sequence.
+- 
+
+
+
 
 
 
