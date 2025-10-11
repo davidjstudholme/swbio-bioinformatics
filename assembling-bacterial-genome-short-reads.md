@@ -6,7 +6,7 @@ We will use a very commonly-used software tool called SPAdes.
 SPAdes can assemble genome sequences from short reads only or it can assemble from a combination of short reads + long reads. Here, we are going to use only short reads.
 
 
-### The worflow
+## The worflow
 
 Here is a graphical overview of the workflow that you will perform in this exercise:
 
@@ -15,14 +15,14 @@ Here is a graphical overview of the workflow that you will perform in this exerc
 See image: [Workflow for assembly and annotation from short reads](<assembly/Screenshot 2025-10-02 at 09.23.25.png>).
 
 
-### The dataset
+## The dataset
 
 - We will use a sequencing dataset that has been deposited in the Sequence Read Archive (SRA) under accession number SRR15305418.
 - You can find information about this dataset on the SRA website [here](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR15305418&display=metadata).
 - The data come from genome sequencing of the bacterial plant-pathogen *Xanthomonas campestris* pv. *fici* strain NCPPB 2372.
 - The data consists of 1.1 million pairs of 151-bp sequence reads.
   
-### Hands on:  Getting the data into Galaxy
+## Step 1:  Getting the data into Galaxy
 
 - In Galaxy, create a new history. Give it a relevant name such as "Bacterial genome assembly short reads".
 - Find the "Download and Extract Reads in FASTQ format from NCBI SRA" tool in Galaxy [here](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsra_tools%2Ffastq_dump%2F3.1.1%2Bgalaxy1&version=latest).
@@ -33,7 +33,7 @@ See image: [Workflow for assembly and annotation from short reads](<assembly/Scr
 
 See image: [Getting the data from SRA](<assembly/Screenshot 2025-09-30 at 15.36.23.png>).
 
-### Hands on: perform quality control using TrimGalore
+## Step 2: perform quality control using TrimGalore
  
 - In Galaxy, find the [TrimGalore tool](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftrim_galore%2Ftrim_galore%2F0.6.10%2Bgalaxy0&version=latest).
 - For "Is this library paired- or single-end?", choose "Paired collection".
@@ -49,7 +49,7 @@ TrimGalore results appear in the Galaxy history.
 See image: [TrimGalore results in history](<assembly/Screenshot 2025-09-30 at 15.50.46.png>).
 
 
-### Hands on: check the quality of the sequence data before and after applying filtering + trimming
+## Step 3: check the quality of the sequence data before and after applying filtering + trimming
 
 We will use FastQC and MultiQC to assess the quality of the sequence reads data (which is in FASTQ format).
 
@@ -88,13 +88,13 @@ Further information. If you want to explore the topic of sequencing QC in more d
 
 
 
-### De-novo assembly
+## De-novo assembly
 
 Now we are ready to commence the de-novo assembly of genomic sequence reads into as assembled genome sequence. There are many tools that we could use for this job. We will use one of the most commonly used tools, names SPAdes. This usually works very well for microbial genomes, but it will struggle with very large genomes such as those from plants and animals.
 
 SPAdes can assemble genome sequences from short reads only or it can assemble from a combination of short reads + long reads. Here, we are going to use only short reads.
 
-### Hands on: assembling short Illumina reads using SPAdes
+## Step 4: assembling short Illumina reads using SPAdes
 
 - Find the [SPAdes tool](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fnml%2Fspades%2Fspades%2F4.2.0%2Bgalaxy0&version=latest) via  the Tools search box in Galaxy.
 - For "Operation mode", select "Assembly and error correction".
@@ -115,7 +115,7 @@ When SPAdes has finished running, it will have generated four new files in the G
 See image: [SPAdes results in Galaxy history](assembly/spades-results).
 
 
-### Hands on: view the assembly graph using Bandage
+## Step 5: view the assembly graph using Bandage
 
 It is fun and interesting to view the assembly graph using [Bandage](https://doi.org/10.1093/bioinformatics/btv383),
 which can be run [within Galaxy](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbandage%2Fbandage_image%2F2022.09%2Bgalaxy4&version=latest).
@@ -124,7 +124,7 @@ Try it! You will generate an image something like this, which illustrates the co
 See image: [Assembly graph](<assembly/Galaxy28-[Bandage Image on data 25_ Assembly Graph Image].jpg>).
 
 
-### Hands on: quality checks on the SPAdes genome assembly, using QUAST
+## Step 6: quality checks on the SPAdes genome assembly, using QUAST
 
 What we really want from assembly is the assembled sequence.
 This is provided in FASTA format. Notice that there are two files: contigs and scaffolds. In practice, the contigs and scaffolds are usually identical or nearly identical.
@@ -161,7 +161,7 @@ Can you find the following information about the assembled genome sequence?
 - Total length of the assembled genome sequence?
 - Size of the largets contig / scaffold ?
 
-### Hands on: annotating the genome assembly, using Bakta
+## Step 7: annotating the genome assembly, using Bakta
 
 We have now achieved a major milestone; we assembled more than a million pairs of short sequence reads into a few hundred much larger contiguous sequences (contigs/scaffolds).
 This is a good start, but there are still two major limitations:
@@ -189,31 +189,40 @@ In other words, we will annotate the genome sequence. We will use an automated a
 The plot looks a bit of a mess because there are so many tiny contigs, which take up much of the space on the plot image. Note that most of the genome is
 represented in the largest contigs/scaffolds. We know from the QUAST output that about 90% of the total sequence is contained in the largest 41 contigs (or 38 scaffolds).
 
+## Step 8: Visualise the genome assembly
+
 The GFF3-formatted annotation is useful, because we can view this in an interactive genome browser such as the [Integrative Genome Browser (IGV)](https://igv.org/):
 
 ![Viewing the assembled and annotated genome sequence in IGV](<annotation/igv-app.svg>)
 
 See image: [Viewing the assembled and annotated genome sequence in IGV](<annotation/igv-app.svg>).
 
+To acheieve this, we first need to download the assembled genome sequence from Galaxy:
 
+- Locate the relevant dataset in your Galaxy history. It will be the the FASTA file generated as output from Flye. [Image](<>).
+- Click on the "disk" icon to download this FASTA file onto your local computer. [Image](<>).
+- The file will probably appear in your Download folder and will be called something like `Galaxy14-[Flye on data 5_ consensus].fasta`.
 
+We also need the Bakta annotation of this assembled genome sequence:
 
+- Locate the relevant dataset. It will be a GFF3 file generated as output from Flye. [Image](<>).
+- Click on the "disk" icon to download this GFF3 file onto your local computer. [Image](<>).
+- The file will probably appear in your Download folder and will be called something like `Galaxy19-[Bakta on data 14_ Annotation and sequences (GFF3)].gff3`.
 
+Now, you can load these files into IGV:
 
+- Navigate to the IGV web application at [https://igv.org/app/](https://igv.org/app/).
+- Use the **Genome->Local File** menu item to upload the assembled genome (FASTA file).
+- Use the **Tracks->Local File** menu item to upload the assembled genome (GFF3 file).
 
+## Optional Step 9: Visualising the reads aligned against the assembly
 
+If you have time, it can be interesting to align the original sequence reads against the assembled genome sequence. 
+This allows us to check for consistency between the final assembly versus the raw data from which it was inferred.
 
+Optionally, you can follow this procedure:
 
-
-
-  
-
-
-
-
-
-
-
+- 
 
 
 
