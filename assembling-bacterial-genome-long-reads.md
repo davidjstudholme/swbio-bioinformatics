@@ -99,7 +99,31 @@ We can visualise the graphical fragment assembly using Bandage. This helps to il
 
 
 
+## Step 8: Visualise the genome assembly
 
+The GFF3-formatted annotation is useful, because we can view this in an interactive genome browser such as the [Integrative Genome Browser (IGV)](https://igv.org/):
+
+![Viewing the assembled and annotated genome sequence in IGV](<annotation/igv-app.svg>)
+
+See image: [Viewing the assembled and annotated genome sequence in IGV](<annotation/igv-app.svg>).
+
+To acheieve this, we first need to download the assembled genome sequence from Galaxy:
+
+- Locate the relevant dataset in your Galaxy history. It will be the the FASTA file generated as output from Flye. [Image](<>).
+- Click on the "disk" icon to download this FASTA file onto your local computer. [Image](<>).
+- The file will probably appear in your Download folder and will be called something like `Galaxy14-[Flye on data 5_ consensus].fasta`.
+
+We also need the Bakta annotation of this assembled genome sequence:
+
+- Locate the relevant dataset. It will be a GFF3 file generated as output from Flye. [Image](<>).
+- Click on the "disk" icon to download this GFF3 file onto your local computer. [Image](<>).
+- The file will probably appear in your Download folder and will be called something like `Galaxy19-[Bakta on data 14_ Annotation and sequences (GFF3)].gff3`.
+
+Now, you can load these files into IGV:
+
+- Navigate to the IGV web application at [https://igv.org/app/](https://igv.org/app/).
+- Use the **Genome->Local File** menu item to upload the assembled genome (FASTA file).
+- Use the **Tracks->Local File** menu item to upload the assembled genome (GFF3 file).
 
 
 ## Optional Step 9: Visualising the reads aligned against the assembly
