@@ -7,10 +7,11 @@ This produced a draft-quality genome sequence that was, unfortunately, fragmente
 
 ## The workflow for assembling long reads
 
-![Workflow for long reads](<assembly/Screenshot 2025-10-03 at 16.19.16.png>)
+![Workflow for long reads](<assembly/Screenshot 2025-10-11 at 15.17.39.png>)
 
-Image: [Workflow for long reads](<assembly/Screenshot 2025-10-03 at 16.19.16.png>).
+Image: [Workflow for long reads](<assembly/Screenshot 2025-10-11 at 15.17.39.png>).
 
+Note that this includes some optional steps, which involve aligning short and long reads against the assembled genome sequence.
 
 In the following exercise, we will do assembly of only long reads, using an assembly tools called Flye.
 Flye is specifically designed to assemble long reads (such as Oxford Nanopore) rather than short reads (such as Illumina).
