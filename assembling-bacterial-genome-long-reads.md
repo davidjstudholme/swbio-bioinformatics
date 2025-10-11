@@ -7,9 +7,9 @@ This produced a draft-quality genome sequence that was, unfortunately, fragmente
 
 ## The workflow for assembling long reads
 
-![Workflow for long reads](<assembly/Screenshot 2025-10-11 at 15.17.39.png>)
+![Workflow for long reads](<assembly/Screenshot 2025-10-11 at 15.40.15.png>)
 
-Image: [Workflow for long reads](<assembly/Screenshot 2025-10-11 at 15.17.39.png>).
+Image: [Workflow for long reads](<assembly/Screenshot 2025-10-11 at 15.40.15.png>).
 
 Note that this includes some optional steps, which involve aligning short and long reads against the assembled genome sequence.
 
