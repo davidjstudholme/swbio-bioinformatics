@@ -199,15 +199,17 @@ See image: [Viewing the assembled and annotated genome sequence in IGV](<annotat
 
 To acheieve this, we first need to download the assembled genome sequence from Galaxy:
 
-- Locate the relevant dataset in your Galaxy history. It will be the the FASTA file generated as output from Flye. [Image](<>).
-- Click on the "disk" icon to download this FASTA file onto your local computer. [Image](<>).
-- The file will probably appear in your Download folder and will be called something like `Galaxy14-[Flye on data 5_ consensus].fasta`.
+- Locate the relevant dataset in your Galaxy history. It will be the the FASTA file generated as output from Flye. [Image](<assembly/Screenshot 2025-10-11 at 14.04.23.png>).
+- Click on the "disk" icon to download this FASTA file onto your local computer. [Image](<assembly/Screenshot 2025-10-11 at 14.04.56.png>).
+- The file will probably appear in your Download folder and will be called something like `Galaxy35-[Bakta on data 27_ Annotation and sequences (GFF3)].fasta`.
+- Optionally, you can rename the file to something more helpful.
 
 We also need the Bakta annotation of this assembled genome sequence:
 
-- Locate the relevant dataset. It will be a GFF3 file generated as output from Flye. [Image](<>).
-- Click on the "disk" icon to download this GFF3 file onto your local computer. [Image](<>).
+- Locate the relevant dataset. It will be a GFF3 file generated as output from SPAdes. [Image](<assembly/Screenshot 2025-10-11 at 14.05.35.png>).
+- Click on the "disk" icon to download this GFF3 file onto your local computer. [Image](<assembly/Screenshot 2025-10-11 at 14.06.05.png>).
 - The file will probably appear in your Download folder and will be called something like `Galaxy19-[Bakta on data 14_ Annotation and sequences (GFF3)].gff3`.
+- Optionally, you can rename the file to something more helpful.
 
 Now, you can load these files into IGV:
 
