@@ -1,3 +1,5 @@
+# Annotating a eukaryotic genome sequence
+
 Previously, we obtained a fungal genome sequence and then masked its repeat sequences using RepeatModeller + RepeatMasker.
 
 Now, we will use that masked genome sequence as the input for genome annotation. In other words, we will search the genome for features such as protein-coding genes.
