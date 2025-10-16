@@ -5,23 +5,21 @@ Previously, we obtained a fungal genome sequence and then masked its repeat sequ
 Now, we will use that masked genome sequence as the input for genome annotation. In other words, we will search the genome for features such as protein-coding genes.
 
 
-### Preparing data
+## Step 1: Preparing data
 
 The Braker3 pipeline exploits amino-acid sequences from known proteins to aid its gene prediction. I have provided a suitable set of protein sequences in this file:
 [protein_sequences.fasta](annotation/protein_sequences.fasta.gz). In case you are curious about where I got these protein sequences,
 I downloaded them from [here](https://www.uniprot.org/proteomes/UP000002311) and [here](https://www.uniprot.org/proteomes/UP000189513) and cmbined them into a single FASTA file.
 
 - Download [protein_sequences.fasta](annotation/protein_sequences.fasta.gz) file onto your computer.
-- Upload this file into Galaxy, using the **Upload** button near the top-left of the Galaxy web page.
-
-![Uploading protein sequences](annotation/upload-proteins.png)  
+- Upload this file into Galaxy, using the **Upload** button near the top-left of the Galaxy web page. Image: [Uploading protein sequences](annotation/upload-proteins.png).  
 
 Once the upload has completed, the protein-sequences file will appear in your Galaxy history. You can view the file to see the protein sequences by clicking on the "eye" icon fo the dataset.
 
-![Viewing the uploaded proteins](annotation/uploaded-proteins.png)
+See image: [Viewing the uploaded proteins](annotation/uploaded-proteins.png).
 
 
-### Hands on: run Braker3 on the masked fungal genome sequence
+## Step 2: run Braker3 on the masked fungal genome sequence
 
 - Search for Braker3 in the Galaxy Tool search box. That will take you to [here](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgenouest%2Fbraker3%2Fbraker3%2F3.0.8%2Bgalaxy2&version=latest).
 - For "Genome sequence is soft-masked" select "Yes".
@@ -32,7 +30,7 @@ Once the upload has completed, the protein-sequences file will appear in your Ga
 - For "Output format", choose "GFF3". (You need to scroll down to find this.)
 - Pres the **Run Tool** button to start the genome annotation process.
 
-![Running Braker3](annotation/running-braker3.png)
+See image: [Running Braker3](annotation/running-braker3.png).
 
 This step will likely take a long time.
 
@@ -42,9 +40,4 @@ bioinformatics format for describing features on a DNA sequence.
 We can interactively visualise the genome annotation by loading this GFF3 file into a genome browser such as [IGV](https://doi.org/10.1093/bib/bbs017) or [Trackster](https://doi.org/10.1038/nbt.2404). 
 
 We can also extract the amino-acid sequences of the proteins products predicted by Braker3. To do this, we will use the GFFread tool in Galaxy.
-
-
-
-
-
 
