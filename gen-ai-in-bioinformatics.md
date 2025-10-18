@@ -172,9 +172,9 @@ Entropy measures the **uncertainty** in the model’s prediction of the next bas
 ## Discussion and Reflection
 
 Discuss with fellow students and instructors:
-- How “design” and “prediction” differ in biological modeling.  
-- What kinds of tasks might be suitable for generative DNA tools.  
-- What ethical or safety considerations should apply to sequence generation.
+- How do “design” and “prediction” differ in biological modeling? Find some additional thoughts about this [here](prediction-versus-design.md). 
+- What kinds of tasks might be suitable for generative DNA tools?  
+- What ethical or safety considerations should apply to sequence generation? Consider for example the concerns raised about [AI-generated bacteriophages](https://arcinstitute.org/news/hie-king-first-synthetic-phage), e.g. in [this LinkedIn post](<https://www.linkedin.com/posts/elenakyria_omg-is-this-a-major-breakthrough-or-have-activity-7375059508391342080-m-LT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAMpP9MBSCze3aWU9bT36byr7i3Hx7YidPw>).
 
 ---
 
