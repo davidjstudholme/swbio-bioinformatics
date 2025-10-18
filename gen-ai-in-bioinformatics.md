@@ -102,9 +102,14 @@ Note: this illustrates that genomes of different species have different charater
 ---
 
 ### **Exercise 2 – Continue a Known Sequence**
-- Switch to “Continue” mode.
-- Paste the first ~200 bp of a known gene (e.g. *lacZ*, *gapdh*, or another of your choice).
-- Generate a continuation.
+Now, rather than generating a sequence from scratch, we are going to provide some real DNA sequence as a prompt.
+The tool will then continue the sequence, by generating new sequence to follow the prompt sequence.
+- Make sure that you are in "Generate" mode.
+- Paste the first ~200 bp of a known gene (e.g. *lacZ*, *gapdh*, or another of your choice) or click on one of the examples (e.g. *gyrA*) to automatically insert the example sequence.
+- Generate a continuation, by pressing **Generate**.
+- Examine the resulting sequence.
+   - Perform a BLASTX search at the [NCBI BLAST website](https://blast.ncbi.nlm.nih.gov/BlastAlign.cgi) to search your generated DNA sequence against real protein sequences.
+ - Perform a BLASTN search at the [NCBI BLAST website](https://blast.ncbi.nlm.nih.gov/BlastAlign.cgi) to search your generated DNA sequence against real DNA sequences.
 
 **Questions:**
 - Does the continuation maintain the correct reading frame?
