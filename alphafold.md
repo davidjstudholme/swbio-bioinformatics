@@ -125,7 +125,7 @@ If you want to explore **de novo prediction** (predicting a structure directly f
    - **Caveat:** Browser interface may be unreliable; download or local execution may be more stable.
 
 **Tip:** This optional extension is for students interested in running predictions themselves, but it is not required to complete the main database-based exercise.
-This is useful if you are investigating a protein for which no prediction has been deposited in the AlphaFold database. And example is the prediction of structures for druggable proteins of the Mpox virus. See:
+This is useful if you are investigating a protein for which no prediction has been deposited in the AlphaFold database. An example is the prediction of structures for druggable proteins of the Mpox virus. See:
 Sahu, A., Gaur, M., Mahanandia, N. C., Subudhi, E., Swain, R. P., & Subudhi, B. B. (2023). Identification of core therapeutic targets for Monkeypox virus and repurposing potential of drugs against them: An *in silico* approach. *Computers in Biology and Medicine*, 161, 106971. [https://doi.org/10.1016/j.compbiomed.2023.106971](https://doi.org/10.1016/j.compbiomed.2023.106971).
 
 ---
