@@ -1,4 +1,4 @@
-# Tutorial Exercise: Exploring AI-Predicted Protein Structures (Updated 2025)
+# Exploring AI-predicted protein structures
 
 **Objective:** Introduce students to AI-predicted protein structures using the AlphaFold Protein Structure Database and practice interpretation, visualization, and structural analysis.
 
@@ -13,7 +13,7 @@ This exercise focuses on **structure visualization, interpretation, and comparat
 
 ## 2. Learning Outcomes
 
-After completing the exercise, students should be able to:
+After completing the exercise, you should be able to:
 
 - Retrieve AI-predicted protein structures from the AlphaFold Database.  
 - Visualize protein 3D structures in web-based or local tools.  
@@ -32,9 +32,9 @@ Optional: Local molecular visualization tools (PyMOL, ChimeraX) for advanced ana
 
 ---
 
-## 4. Exercise Steps
+## 4. Exercise steps
 
-### Step 1: Select a Protein
+### Step 1: Select a protein
 
 - Pick a protein of interest. Options include:
   - Human proteins (UniProt ID, e.g., **P69905** for hemoglobin alpha).  
@@ -43,7 +43,7 @@ Optional: Local molecular visualization tools (PyMOL, ChimeraX) for advanced ana
 
 ---
 
-### Step 2: Query the AlphaFold Database
+### Step 2: Query the AlphaFold database
 
 1. Go to [https://alphafold.ebi.ac.uk/](https://alphafold.ebi.ac.uk/)  
 2. Enter the **UniProt ID or gene name** in the search bar.  
@@ -51,7 +51,7 @@ Optional: Local molecular visualization tools (PyMOL, ChimeraX) for advanced ana
 
 ---
 
-### Step 3: Explore the Predicted Structure
+### Step 3: Explore the predicted structure
 
 - View the structure in the embedded **Mol\*** viewer.  
 - Observe:
@@ -61,7 +61,7 @@ Optional: Local molecular visualization tools (PyMOL, ChimeraX) for advanced ana
 
 ---
 
-### Step 4: Analyze and Compare
+### Step 4: Analyze and compare
 
 1. Identify **high- and low-confidence regions**.  
 2. Optional: Download the PDB file for local analysis in **PyMOL** or **ChimeraX**.  
@@ -74,14 +74,14 @@ Optional: Local molecular visualization tools (PyMOL, ChimeraX) for advanced ana
 
 ---
 
-### Step 5: Optional Comparative Exploration
+### Step 5: Optional comparative exploration
 
 - Pick homologs from other species and compare AlphaFold structures to explore **conservation of fold**.  
 - Identify residues that are **highly conserved and well-predicted** versus variable and low-confidence.
 
 ---
 
-## 5. Discussion Questions
+## 5. Discussion questions
 
 1. How reliable are AI-predicted structures for regions with low sequence conservation?  
 2. How do confidence scores (pLDDT) relate to experimental uncertainty or disorder?  
@@ -99,7 +99,7 @@ Optional: Local molecular visualization tools (PyMOL, ChimeraX) for advanced ana
 
 ---
 
-## 8. Optional Extension: Ab Initio Structure Prediction
+## 8. Optional Extension: *Ab initio* structure prediction
 
 If you want to explore **de novo prediction** (predicting a structure directly from sequence):
 
@@ -115,5 +115,7 @@ If you want to explore **de novo prediction** (predicting a structure directly f
    - **Caveat:** Browser interface may be unreliable; download or local execution may be more stable.
 
 **Tip:** This optional extension is for students interested in running predictions themselves, but it is not required to complete the main database-based exercise.
+This is useful if you are investigating a protein for which no prediction has been deposited in the AlphaFold database. And example is the prediction of structures for druggable proteins of the Mpox virus. See:
+Sahu, A., Gaur, M., Mahanandia, N. C., Subudhi, E., Swain, R. P., & Subudhi, B. B. (2023). Identification of core therapeutic targets for Monkeypox virus and repurposing potential of drugs against them: An *in silico* approach. *Computers in Biology and Medicine*, 161, 106971. [https://doi.org/10.1016/j.compbiomed.2023.106971](https://doi.org/10.1016/j.compbiomed.2023.106971).
 
 ---
