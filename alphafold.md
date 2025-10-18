@@ -1,8 +1,5 @@
-# Tutorial Exercise: AI-Enabled Prediction of Protein Structures (Updated 2025)
+# Tutorial Exercise: AI-Enabled Prediction of Protein Structures
 
-**Course:** Advanced Topics in Bioinformatics  
-**Duration:** ~1.5 hours  
-**Level:** Graduate  
 **Objective:** Introduce students to AI-based approaches for predicting protein 3D structures, using **AlphaFold2** through the **ColabFold** platform.
 
 ---
@@ -137,18 +134,3 @@ Optional: Compare your model to a known structure using tools like **DALI** or *
 - AlphaFold Protein Structure Database: [https://alphafold.ebi.ac.uk/](https://alphafold.ebi.ac.uk/)
 
 ---
-
-### Deliverable
-
-Submit a brief report (1–2 pages) including:
-
-- The protein sequence and its source.  
-- Screenshot of the predicted structure.  
-- Short interpretation of structural features and confidence.  
-- (Optional) Comparison to a known homolog or mutant variant.
-
----
-
-*Prepared by: [Instructor’s Name]*  
-*Version: October 2025*
-
