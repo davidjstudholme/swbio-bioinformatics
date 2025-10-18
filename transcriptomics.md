@@ -41,7 +41,7 @@ When performing research, it would be necessary to include several replicates of
 
 ---
 
-## Hands on: Step 1 - Import the provided RNA-seq data into Galaxy
+## Step 1: Import the provided RNA-seq data into Galaxy
 
 You will import **two samples** (paired-end FASTQ files):
 
@@ -77,7 +77,7 @@ https://zenodo.org/records/17311933/files/M23_15.SRR1582659.subsampled_2.fq.gz
      
 ---
 
-## Hands on: Step 2 - Quality control
+## Step 2: Quality control
 Run **FastQC** on the paired-end collection.
 
 - Tool: [FastQC](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffastqc%2Ffastqc%2F0.74%2Bgalaxy1&version=latest)  
@@ -90,7 +90,7 @@ Run **FastQC** on the paired-end collection.
 
 ---
 
-## Hands on: Step 3 - Align RNA-seq reads against a reference genome
+## Step 3: Align RNA-seq reads against a reference genome
 
 For this step, we first need to obtain the *Xanthomonas oryzae* pv. *oryzae* reference genome (in FASTA format).
 The file can be obtained from the the NCBI, via their FTP site, with this URL:
@@ -116,7 +116,7 @@ using a genome browser such as [IGV](https://igv.org/).
 
 ---
 
-## Hands on: Step 4 - Count reads per gene
+## Step 4: Count reads per gene
 
 Now that we have aligned the RNA-seq reads against the reference genome, next we need to quantify the results.
 The amount of reads aligned to a gene is a correlated with the abundance of the corresponding transcript in the biological sample.
@@ -173,7 +173,7 @@ One consists of read-counts for the control and the other table has read-counts 
 
 ---
 
-## Hands on: Step 5 - Identify differentially expressed genes
+## Step 5: Identify differentially expressed genes
 
 We now have a matrix that enumerates the numbers of aligned reads against each gene in the treatment and in the control.
 If you view that matrix in Galaxy, it will look something like this [image](<rna-seq/Screenshot 2025-10-10 143014.jpg>).
@@ -208,7 +208,7 @@ Here, I will illustrate the steps using a MS Excel spreadsheet. But, you could p
   
 ---
 
-## Hands on: Step 6 - Interpretation
+## Step 6: Interpretation
 
 - Which genes are significantly upregulated in the treatment condition?  
 - Do any correspond to known virulence factors, secretion systems, or regulatory proteins?  
@@ -283,3 +283,11 @@ This session demonstrates *how* RNA-seq data are processed and compared, not *ho
 The concepts you learn here — mapping, counting, combining, and interpreting data — are the foundation for more rigorous analyses once replicates and normalization are added.
 
 ---
+
+# Further information about RNA-seq analysis
+For a more in-depth and realistic tutorial on analysing RNA-seq data in Galaxy, please see:
+
+- [Reference-based trascriptomics tutorial](<https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html>)
+- [Transcriptomics tutorial](<https://gallantries.github.io/video-library/modules/transcriptomics>)
+
+
