@@ -1,4 +1,5 @@
 # LLMs and generative AI in bioinformatics
+Background information can be found in these manuscripts and web pages:
 
 - Nguyen, E., Poli, M., Durrant, M. G., Kang, B., Katrekar, D., Li, D. B., Bartie, L. J.,
 Thomas, A. W., King, S. H., Brixi, G., Sullivan, J., Ng, M. Y., Lewis, A., Lou, A., Ermon, S.,
@@ -22,6 +23,12 @@ https://doi.org/10.1126/science.ado9336
 Evo Designer is an interactive interface for **Evo 2**, a large generative model trained on billions of natural DNA sequences.  
 It can generate, extend, and evaluate DNA sequences, providing insight into how machine learning models understand genomic information.
 
+A generative AI tool such as ChatGPT generates generates new text,
+based on the user-supplied prompt and its underlying large language model (LLM). That LLM has been built on text (from internet, documents, bbooks etc.).
+
+Evo 2 is somewhat analogous to such AI chat tools.
+The fundamental difference is that it generates DNA sequences instead of text. Its underlying LLM has been trained on nulceotide sequences instead of text. 
+
 In this exercise, you will:
 - Explore the **generation** of new DNA sequences from prompts.
 - **Extend** existing sequences.
@@ -34,9 +41,9 @@ In this exercise, you will:
 
 By the end of this tutorial, you should be able to:
 
-1. Use Evo Designer to generate DNA sequences from text or organism prompts.  
-2. Extend partial DNA sequences and inspect predicted annotations.  
-3. Score a DNA sequence to visualize model confidence (entropy / perplexity).  
+1. Use Evo Designer 2 to generate DNA sequences from text- or organism- prompts.  
+2. Extend partial DNA sequences and inspect predicted annotations iof those generated sequences.  
+3. Score a DNA sequence to visualize model confidence (entropy).  
 4. Compare outputs across different prompts and analyze patterns.  
 5. Critically discuss the possibilities and limits of generative DNA modeling.
 
@@ -48,23 +55,45 @@ By the end of this tutorial, you should be able to:
    ➜ [https://arcinstitute.org/tools/evo/evo-designer](https://arcinstitute.org/tools/evo/evo-designer)
 
 2. Familiarize yourself with the interface:
-   - **Mode selector:** choose “Generate,” “Continue,” or “Score.”
-   - **Prompt options:** choose by organism or enter your own text.
+   - **Mode selector:** you can “Generate” or “Score” a sequence.
+   - **Prompt options:** you can continue a sequence that you generated or that you entered.
    - **Visualization panels:** view DNA sequences, annotations, entropy plots, and predicted protein structures.
 
-3. Work individually or in pairs. Keep notes of your prompts, outputs, and observations.
+3. Work individually or in pairs or samll groups. Keep notes of your prompts, outputs, and observations.
 
 ---
 
 ## 4. Exercises
 
-### **Exercise 1 – Generate a DNA Sequence**
+### **Exercise 1 – Generate a DNA Sequence** "from scratch"
+- In “Generate” mode, choose **an organism** (e.g. *Human*)
+- Click *Generate* and observe:
+  - The resulting DNA sequence length.
+  - Any predicted coding regions.
+  - GC content (e.g. copy and paste into ).
+  - If available, predicted 3D protein structure.
+- Repeat this process several times to generate several DNA sequences from this species (e.g. *Human*).
+- Repeat this process several times to generate sequences for a different species (e.g. *Mycobcaterium tuberculosis*).
+
+| Species                      | Sequence generated | G+C content  | Protein product(s)? | 
+| --------------------------   | ------------------ | ------------ | ------------------- |  
+| Human                        | First attempt      |              |                     |   
+| Human                        | Second attempt     |              |                     |   
+| Human                        | Third attempt      |              |                     |   
+| Human                        | Fourth attempt     |              |                     |   
+| *Mycobacterium tuberculosis* | First attempt      |              |                     |   
+| *Mycobacterium tuberculosis* | Second attempt     |              |                     |   
+| *Mycobacterium tuberculosis* | Third attempt      |              |                     |   
+| *Mycobacterium tuberculosis* | Fourth attempt     |              |                     | 
+
+Note: this illustrates that genomes of different species have different charateristic nucleotide composition. This includes percentage of G+C versus A+T.   
+
 - In “Generate” mode, choose **an organism** (e.g. *E. coli*, *Human*, *Saccharomyces cerevisiae*) and a gene name or short description.
 - Click *Generate* and observe:
   - The resulting DNA sequence length.
   - Any predicted coding regions.
   - GC content (approximate visually or copy to another tool).
-  - If available, predicted 3D protein structure.
+  - If available, predicted 3D protein structure. 
 
 **Questions:**
 - How plausible does the sequence look (e.g. open reading frames, start/stop codons)?
