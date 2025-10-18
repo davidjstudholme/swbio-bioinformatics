@@ -1,8 +1,5 @@
 # Tutorial Exercise: Exploring AI-Predicted Protein Structures (Updated 2025)
 
-**Course:** Advanced Topics in Bioinformatics  
-**Duration:** ~1 hour  
-**Level:** Graduate  
 **Objective:** Introduce students to AI-predicted protein structures using the AlphaFold Protein Structure Database and practice interpretation, visualization, and structural analysis.
 
 ---
@@ -93,16 +90,6 @@ Optional: Local molecular visualization tools (PyMOL, ChimeraX) for advanced ana
 
 ---
 
-## 6. Deliverable
-
-Students submit a short report (~1 page) including:
-
-- Protein name, UniProt ID, and species.  
-- Screenshot of the AlphaFold viewer with pLDDT coloring.  
-- Observations about secondary structure, domains, and confidence regions.  
-- Optional: Comparison to PDB structures or homologs.
-
----
 
 ## 7. References
 
@@ -130,6 +117,3 @@ If you want to explore **de novo prediction** (predicting a structure directly f
 **Tip:** This optional extension is for students interested in running predictions themselves, but it is not required to complete the main database-based exercise.
 
 ---
-
-*Prepared by: [Instructor’s Name]*  
-*Version: October 2025*
