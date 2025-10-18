@@ -6,6 +6,16 @@
 
 ## 1. Background
 
+Protein structure prediction seeks to determine the 3D conformation of a protein from its amino acid sequence.  
+Recent breakthroughs in **AI and deep learning**—notably **AlphaFold2** (DeepMind) and related models—have achieved near-experimental accuracy for many proteins.
+
+### Key AI Tools
+
+| Tool | Developer | Core Method | Access |
+|------|------------|-------------|--------|
+| **AlphaFold2** | DeepMind (2021) | Transformer-based deep learning using evolutionary information | Available via ColabFold (Google Colab), local installation, or AlphaFold DB |
+| **ESMFold** | Meta AI (2022) | Protein language model trained on massive sequence datasets | Currently unreliable for browser-based folding (2025) |
+
 The AlphaFold Protein Structure Database contains **millions of predicted structures** for proteins across multiple species. These predictions include **per-residue confidence scores (pLDDT)**.  
 This exercise focuses on **structure visualization, interpretation, and comparative analysis** using precomputed structures, avoiding ab initio prediction.
 
