@@ -10,7 +10,7 @@ Evo Designer is an interactive interface for **Evo 2**, a large generative model
 It can generate, extend, and evaluate DNA sequences, providing insight into how machine learning models understand genomic information.
 
 A generative AI tool such as ChatGPT generates generates new text,
-based on the user-supplied prompt and its underlying large language model (LLM). That LLM has been built on text (from internet, documents, bbooks etc.).
+based on the user-supplied prompt and its underlying large language model (LLM). That LLM has been built on text (from internet, documents, books etc.).
 
 Evo 2 is somewhat analogous to such AI chat tools.
 The fundamental difference is that it generates DNA sequences instead of text. Its underlying LLM has been trained on nulceotide sequences instead of text. 
