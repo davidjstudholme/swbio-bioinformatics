@@ -57,7 +57,7 @@ By the end of this tutorial, you should be able to:
 - Click **Generate** and observe:
   - The resulting DNA sequence length.
   - Any predicted coding regions.
-  - GC content (e.g. copy and paste into ).
+  - GC content (e.g. copy and paste into [here](https://jamiemcgowan.ie/bioinf/gc_content.html) ).
   - If available, predicted 3D protein structure.
 - Repeat this process several times to generate several DNA sequences from this species (e.g. Human).
 - Repeat this process several times to generate sequences for a different species (e.g. *Mycobcaterium tuberculosis*).
