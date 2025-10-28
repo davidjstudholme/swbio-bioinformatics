@@ -12,7 +12,7 @@ Welcome to the SWBio Bioinformatics course at https://davidjstudholme.github.io/
 
 - [Assembling and annotating a prokaryotic genome from **short** reads](assembling-bacterial-genome-short-reads.md)
 - [Assembling and annotating a prokaryotic genome from **long** reads](assembling-bacterial-genome-long-reads.md)
-- [Further information about assembly[assembly-further-reading.md)
+- [Further information about assembly](assembly-further-reading.md)
 
 ## Tuesday p.m. - Working with transcriptomic sequence data
 
