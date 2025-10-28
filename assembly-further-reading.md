@@ -10,4 +10,9 @@
 - [Decontamination of a genome assembly](https://training.galaxyproject.org/training-material/topics/assembly/tutorials/assembly-decontamination/tutorial.html)
 - [Genome Assembly of a bacterial genome (MRSA) sequenced using Illumina MiSeq Data](https://training.galaxyproject.org/training-material/topics/assembly/tutorials/mrsa-illumina/tutorial.html)
 - [De Bruijn Graph Assembly](https://training.galaxyproject.org/training-material/topics/assembly/tutorials/debruijn-graph-assembly/tutorial.html)
-- 
+- [Unicycler Assembly](https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html)
+- [Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads](https://training.galaxyproject.org/training-material/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html)
+- [Vertebrate genome assembly using HiFi, Bionano and Hi-C data - Step by Step](https://training.galaxyproject.org/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html)
+- [Genome assembly using PacBio data](https://training.galaxyproject.org/training-material/topics/assembly/tutorials/hifi-assembly/tutorial.html)
+
+  
