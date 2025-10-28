@@ -6,7 +6,7 @@ We will use a very commonly-used software tool called SPAdes.
 SPAdes can assemble genome sequences from short reads only or it can assemble from a combination of short reads + long reads. Here, we are going to use only short reads.
 
 
-## The worflow
+## The workflow
 
 Here is a graphical overview of the workflow that you will perform in this exercise:
 
