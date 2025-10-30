@@ -33,7 +33,7 @@ The negative control consisted of bacteria grown in the same liquid medium, but 
 
 The original datasets are large and numerous. We will work with **downsampled data**
 (two million read-pairs per sample) to make the analysis quick and manageable for classroom use. 
-I used [this tool in Galaxy](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fpeterjc%2Fsample_seqs%2Fsample_seqs%2F0.2.6&version=latest)
+I used [this tool in Galaxy](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_sample%2F1.5%2Bgalaxy0&version=latest)
 to do the downsampling.
 Note that we also not including replicates in this analysis, to save time and avoid complexity.
 When performing research, it would be necessary to include several replicates of the treatmenet and the control.
