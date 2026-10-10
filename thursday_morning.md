@@ -33,11 +33,21 @@ You also need to identify the output you expect from each step and how they you 
 ## 11:30 - 12:15 (45 min)
 Start your first analytical steps, such as importing reads into Galaxy, inspecting sequence data, checking sample metadata or selecting an appropriate assembly approach.
 
-12:15
-15 min
 # Checkpoint
 ## 12:15 - 12:30 (15 minutes) 
 Record your question, planned workflow, first result and main obstacle.
 This becomes the starting point for Thursday afternoon.
 
 The **deliverable**: a mini-project analysis plan
+
+Mini-project analysis plan
+
+
+| Element of plan             | ............... Your answer ............... |
+| ------------------- | ---------------- |
+| Biological question |                |
+| Data and metadata |  |
+| Proposed analytical approach |  |
+| Expected result |  |
+| Main uncertainty or risk |  |
+
