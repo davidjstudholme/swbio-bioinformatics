@@ -55,5 +55,8 @@ Wednesday afternoon is kept clear to allow travel back from Exeter to your home 
 
 ## Friday  p.m.
 
+By the end of Friday, you should have made meaningful progress on your chosen mini-project, produced at least one interpretable result, evaluated its reliability, and identified what you would do next.
+
+
 
 
