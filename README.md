@@ -48,9 +48,10 @@ The lecture slides will be posted on Bristol's [Blackboard](https://www.ole.bris
 Wednesday afternoon is kept clear to allow travel back from Exeter to your home institution.
 
 ## Thursday a.m.
-
-## Thursday p.m.
 - [Session plan](thursday_morning.md)
+  
+## Thursday p.m.
+
 
 ## Friday  a.m.
 
