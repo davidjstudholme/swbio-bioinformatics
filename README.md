@@ -50,6 +50,7 @@ Wednesday afternoon is kept clear to allow travel back from Exeter to your home 
 ## Thursday a.m.
 
 ## Thursday p.m.
+- [Session plan](thursday_morning.md)
 
 ## Friday  a.m.
 
