@@ -1,4 +1,4 @@
-Purpose: produce the first meaningful result and understand what it tells us.
+# Purpose: produce the first meaningful result and understand what it tells us.
 
 This should be the main practical session. You work through your proposed workflows, with support available through Teams.
 
