@@ -7,7 +7,6 @@ State your biological question in one sentence.
   - "Does deleting _irlR2_ alter gene expression?" is a biological question;
   - "Run a differential-expression tool" is an analytical step.
 
-
 # Understand the dataset
 ## 09:50 - 10:30 (40 min)
 
@@ -21,9 +20,6 @@ You should establish:
 
 # Break
 ## 10:30 - 10:45 (15 min)
-
-10:45
-45 min
 
 ## Develop an analysis plan
 Draw a simple workflow showing the steps needed to answer your question. You should explain what each step is intended to achieve, rather than simply listing software.
@@ -47,4 +43,3 @@ The **deliverable**: your mini-project analysis plan:
 | Proposed analytical approach |  |
 | Expected result |  |
 | Main uncertainty or risk |  |
-
