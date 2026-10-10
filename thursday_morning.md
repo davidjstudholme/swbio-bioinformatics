@@ -1,15 +1,16 @@
-# 09:30
+# Introducing the challenge
+## 09:30 - 09:50 (20 min)
 
-20 min
+State your biological question in one sentence.
+- What do you want to discover, compare or reconstruct?
+- Distinguish the biological question from the computational task. For example:
+  - "Does deleting _irlR2_ alter gene expression?" is a biological question;
+  - "Run a differential-expression tool" is an analytical step.
 
-1. Introduce the challenge
-State your biological question in one sentence. What do you want to discover, compare or reconstruct?
-Distinguish the biological question from the computational task.
-For example, "Does deleting irlR2 alter gene expression?" is a biological question; "run a differential-expression tool" is an analytical step.
 
-09:50
-40 min
-2. Understand the dataset
+# Understand the dataset
+## 09:50 - 10:30 (40 min)
+
 Locate the relevant files, examine the sample metadata and consult the source paper or database record.
 You should establish:
 - What organism and biological material are represented?
@@ -18,24 +19,25 @@ You should establish:
 - What reference genome or annotation might be needed?
 - What important information is missing or uncertain?
 
-10:30
-15 min
-3. Break
+# Break
+## 10:30 - 10:45 (15 min)
 
 10:45
 45 min
-4. Develop an analysis plan
+
+## Develop an analysis plan
 Draw a simple workflow showing the steps needed to answer your question. You should explain what each step is intended to achieve, rather than simply listing software.
 You also need to identify the output you expect from each step and how they you judge whether it is satisfactory.
 
-11:30
-45 min
-5. Begin the analysis
+# Begin the analysis
+## 11:30 - 12:15 (45 min)
 Start your first analytical steps, such as importing reads into Galaxy, inspecting sequence data, checking sample metadata or selecting an appropriate assembly approach.
 
 12:15
 15 min
-6. Checkpoint
-Each student records their question, planned workflow, first result and main obstacle. This becomes the starting point for Thursday afternoon.
+# Checkpoint
+## 12:15 - 12:30 (15 minutes) 
+Record your question, planned workflow, first result and main obstacle.
+This becomes the starting point for Thursday afternoon.
 
-The deliverable: a mini-project analysis plan
+The **deliverable**: a mini-project analysis plan
