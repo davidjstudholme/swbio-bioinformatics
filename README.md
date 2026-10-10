@@ -3,31 +3,35 @@ Welcome to the SWBio Bioinformatics course at https://davidjstudholme.github.io/
 
 ## Monday p.m. - Introduction
 
+This first section is rather more lecture-heavy. The rest of the week is much more based around you working through practical exercises and interacting with the instructor(s).
+The lecture slides will be posted on Bristol's [Blackboard](https://www.ole.bris.ac.uk) before the start of the course.
+
 - Greetings and introductions
 - What is bioinformatics?
 - The 'central dogma'
 - Introduction to the course and assessment
 - From biological question to computational analysis
-- What is actually in sequencing data?
-- How Galaxy fits into all this - reproducible computational research
+- What does sequencing data look like?
+  - Shotgun genome sequencing with 'next-generation' platforms
+  - Reads and paired reads
+  - The FASTQ format and data quality
+  - Short reads and long reads
+  - The sequence assembly problem
+- _De-novo_ assembly versus alignment against a reference
+- Repeats and why read length is important
+- How Galaxy fits into all this - pipelines and reproducible computational research
 
 ## Tuesday a.m. - From sequence reads to the whole genome
 
-- Shotgun genome sequencing with 'next-generation' platforms
-- Reads and paired reads
-- Short reads and long reads
-- The sequence assembly problem
-- _De-novo_ assembly versus alignment against a reference
-- Repeats and why read length is important
-- Quality control
-- Hybrid _de-novo_ assembly
+- Quick recap on de-novo assembly
+- Quality control of assembled genome sequence
+- Hybrid _de-novo_ assembly (short-read-first versus long-read-first)
 - Practical: [Assembling and annotating a prokaryotic genome from **short** reads](assembling-bacterial-genome-short-reads.md)
 - Practical [Assembling and annotating a prokaryotic genome from **long** reads](assembling-bacterial-genome-long-reads.md)
 - Further information [about assembly](assembly-further-reading.md)
 
 ## Tuesday p.m. - Sequence reads and gene expression
 
-- The FASTQ format and data quality
 - Mapping (or alignment) of reads against a reference
 - Quantification
 - Differential gene expression
@@ -43,6 +47,13 @@ Welcome to the SWBio Bioinformatics course at https://davidjstudholme.github.io/
 
 Wednesday afternoon is kept clear to allow travel back from Exeter to your home institution.
 
-## Thursday and Friday
+## Thursday a.m.
 
-Online-supported self-study. You are recommended to use this time to complete (or at least make a substantial start on your coursework.
+## Thursday p.m.
+
+## Friday  a.m.
+
+## Friday  p.m.
+
+
+
