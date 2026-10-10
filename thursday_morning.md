@@ -38,12 +38,9 @@ Start your first analytical steps, such as importing reads into Galaxy, inspecti
 Record your question, planned workflow, first result and main obstacle.
 This becomes the starting point for Thursday afternoon.
 
-The **deliverable**: a mini-project analysis plan
+The **deliverable**: your mini-project analysis plan:
 
-Mini-project analysis plan
-
-
-| Element of plan             | ............... Your answer ............... |
+| Element of plan    | ............... Your answer ............... |
 | ------------------- | ---------------- |
 | Biological question |                |
 | Data and metadata |  |
