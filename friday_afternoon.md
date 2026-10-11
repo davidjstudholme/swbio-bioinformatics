@@ -15,7 +15,7 @@ Complete these sentences:
 If you cannot complete these sentences, you may not yet understand what your analysis has achieved!
 
 ## Build the poster skeleton
-### 14:00–14:45
+### 14:00–14:45 (45 min)
 Create a basic poster structure, even if some results remain preliminary.
 You can use a template for this or build your own document from scratch.
 Prioritise the scientific content before worrying about colour schemes or decorative graphics.
@@ -31,7 +31,8 @@ You can fix and refine those later.
 |References	| Credit the original study, source of datasets and relevant methods |
  
 
-## Figure and caption workshop (15:00–15:45)
+## Figure and caption workshop
+### Estimated timing: 15:00–15:45 (45 minutes)
 Check:
 - Are axes labelled and units or scales explained?
 - Does the legend say what was analysed?
@@ -40,10 +41,11 @@ Check:
 - Does the caption distinguish observation from interpretation?
 For instance, "Volcano plot of differentially expressed genes" is a weak caption. A stronger one would explain the comparison, what the axes represent, how significance was assessed and what the highlighted points indicate.
 
-## Optional short presentation and feedback (15:45–16:30)
-### 
+## Optional short presentation and feedback
+### Estimated timing: 15:45–16:30 (45 minutes) 
 Present your poster skeleton or preliminary figure in two minutes in the online meeting, followed by one minute of questions from instructor and other students.
-There will not be time for everybody to do this and I expect that most will not want to do it. During the session, the instructor will ask who wants to present.
+There will not be time for everybody to do this and I expect that most will not want to do it.
+During the session, the instructor will ask who wants to present and we can adjust the timings in this session accommodate as many as possible who want to participate in this opportunity for feedback.
 
 Feedback from instructor and students should focus on three things:
 1. Is the biological question clear?
