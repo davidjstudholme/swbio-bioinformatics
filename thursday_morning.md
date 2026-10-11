@@ -1,7 +1,7 @@
 # Introducing the challenge
 ## 09:30 - 09:50 (20 min)
 
-State your biological question in one sentence.
+State your biological research question in one sentence.
 - What do you want to discover, compare or reconstruct?
 - Distinguish the biological question from the computational task. For example:
   - "Does deleting _irlR2_ alter gene expression?" is a biological question;
@@ -36,9 +36,9 @@ This becomes the starting point for Thursday afternoon.
 
 The **deliverable**: your mini-project analysis plan:
 
-| Element of plan    | ............... Your answer ............... |
+| Element of plan    |  Your notes  |
 | ------------------- | ---------------- |
-| Biological question |                |
+| Biological research question |                |
 | Data and metadata |  |
 | Proposed analytical approach |  |
 | Expected result |  |
