@@ -1,6 +1,10 @@
-# Purpose: turn the analysis into a concise, defensible scientific argument.
+# Communicating your results
 
-# Construct the scientific story (13:30–14:00)
+The main purpose of this session is turn your the analysis into a concise, defensible scientific argument that you will communicate via your poster.
+By the end of this session you will have a "poster skeleton" (very appropriate for Halloween!) that serves as a draft of your final coursework.
+
+## Construct the scientific story
+# 13:30–14:00 (30 min)
 Complete these sentences:
 - Question: I wanted to find out whether…
 - Approach: I analysed…
@@ -10,10 +14,12 @@ Complete these sentences:
 - 
 If you cannot complete these sentences, you may not yet understand what your analysis has achieved!
 
-# Build the poster skeleton (14:00–14:45)
+## Build the poster skeleton
+### 14:00–14:45
 Create a basic poster structure, even if some results remain preliminary.
-Prioritise the scientific content before worrying about colour schemes or decorative graphics. You can fix those later.
-
+You can use a template for this or build your own document from scratch.
+Prioritise the scientific content before worrying about colour schemes or decorative graphics.
+You can fix and refine those later.
 
 | Section	| What it needs to accomplish |
 | -------- | -------------------------|
@@ -22,10 +28,10 @@ Prioritise the scientific content before worrying about colour schemes or decora
 |Methods	 | Describe the data and principal analytical steps |
 |Results	| Present the main figure or table with a useful legend |
 |Conclusion |	State what the evidence supports, including limitations |
-|References	| Credit the original study, datasets and relevant methods |
+|References	| Credit the original study, source of datasets and relevant methods |
  
 
-# Figure and caption workshop (15:00–15:45)
+## Figure and caption workshop (15:00–15:45)
 Check:
 - Are axes labelled and units or scales explained?
 - Does the legend say what was analysed?
@@ -34,40 +40,19 @@ Check:
 - Does the caption distinguish observation from interpretation?
 For instance, "Volcano plot of differentially expressed genes" is a weak caption. A stronger one would explain the comparison, what the axes represent, how significance was assessed and what the highlighted points indicate.
 
-# Optional short presentation and feedback (15:45–16:30)
-Present your poster skeleton or preliminary figure in two minutes, followed by one minute of questions.
-Peers should focus on three things:
+## Optional short presentation and feedback (15:45–16:30)
+### 
+Present your poster skeleton or preliminary figure in two minutes in the online meeting, followed by one minute of questions from instructor and other students.
+There will not be time for everybody to do this and I expect that most will not want to do it. During the session, the instructor will ask who wants to present.
+
+Feedback from instructor and students should focus on three things:
 1. Is the biological question clear?
 2. Is the main result understandable?
 3. Is the conclusion justified by the evidence?
+   
 Then you can identify one improvement to make after the course.
-The deliverable: a poster skeleton, at least one figure with a draft legend, and a clear statement of the main finding and its limitations.
 
-5. How to make this work with eight different mini-projects
-The main logistical challenge is that you will have students doing different things simultaneously. I would address this with a common structure and project-specific support, rather than trying to standardise every student's workflow.
-I'd prepare a short project sheet for each mini-project with four headings:
-- What biological question could this project answer?
-- What is the minimum viable analysis?
-- What would a useful result look like?
-- What are the main limitations or pitfalls?
+Note: a result does not have to be statistically significant to be a useful outcome.
+A well-documented analysis that reveals insufficient evidence, missing metadata or a limitation in the data can still demonstrate good bioinformatics practice.
 
-- 
-For example:
-
-| Mini-project	| Minimum viable outcome |
-| ------------- | ---------------------- |
-| Bumblebee RNA-seq |	A defensible comparison of exposed and control samples, with an interpretable expression result |
-| Arabidopsis RNA-seq	| A clearly defined comparison between two relevant conditions |
-| Gyrodactylus transcriptome	 | A documented exploratory analysis, with the missing treatment metadata explicitly recognised |
-| Burkholderia mutants	 | A comparison of wild-type and mutant expression, supported by QC and appropriate interpretation |
-| Yeast genome | 	An assembly and a basic quality assessment |
-| Bacterial genome | 	An assembly with a clear explanation of its quality and limitations |
-| Chloroplast genome |	An assembly attempt with an assessment of whether the resulting sequence is consistent with the intended target |
-| Open-ended project |	An agreed, feasible question and a preliminary result from a relevant method |
-
-These are suggested teaching milestones, not extra assessment requirements.
-
-Not all the RNA-seq projects are equally straightforward statistically. The bumblebee project asks students to compare imidacloprid-exposed and control samples; the Arabidopsis project includes multiple temperature/time conditions; and the Burkholderia project has three wild-type and three mutant samples.
- I'll provide a recommended comparison for each, rather than leave you to choose contrasts without guidance.
-A result does not have to be statistically significant to be a useful outcome. A well-documented analysis that reveals insufficient evidence, missing metadata or a limitation in the data can still demonstrate good bioinformatics practice.
-
+The **deliverable**: a poster skeleton, at least one figure with a draft legend, and a clear statement of the main finding and its limitations.
