@@ -1,14 +1,20 @@
-# Introducing the challenge
-## 09:30 - 09:50 (20 min)
+# Analysis challenge: investigate a biological question
+In this session, you will make a start on your assessed coursework.
+You will perform a research mini-project, which you will communicate in the form of a poster.
+You can choose any one from a menu of several mini-projects that are detailed on the Blackboard site.
+This first section is largely about preparation and planning. By the end of this session, you should have a plan for your mini-project. 
 
-State your biological research question in one sentence.
+## Introducing the challenge
+### 09:30 - 09:50 (20 min)
+
+Having chosen one of the mini-projects, state your biological research question in one sentence.
 - What do you want to discover, compare or reconstruct?
 - Distinguish the biological question from the computational task. For example:
   - "Does deleting _irlR2_ alter gene expression?" is a biological question;
   - "Run a differential-expression tool" is an analytical step.
 
-# Understand the dataset
-## 09:50 - 10:30 (40 min)
+## Understand the dataset
+### 09:50 - 10:30 (40 min)
 
 Locate the relevant files, examine the sample metadata and consult the source paper or database record.
 You should establish:
@@ -18,20 +24,21 @@ You should establish:
 - What reference genome or annotation might be needed?
 - What important information is missing or uncertain?
 
-# Break
-## 10:30 - 10:45 (15 min)
+## Break
+### 10:30 - 10:45 (15 min)
 
-## Develop an analysis plan
+### Develop an analysis plan
 Draw a simple workflow showing the steps needed to answer your question. You should explain what each step is intended to achieve, rather than simply listing software.
 You also need to identify the output you expect from each step and how they you judge whether it is satisfactory.
 
-# Begin the analysis
-## 11:30 - 12:15 (45 min)
+## Begin the analysis
+### 11:30 - 12:15 (45 min)
 Start your first analytical steps, such as importing reads into Galaxy, inspecting sequence data, checking sample metadata or selecting an appropriate assembly approach.
 
-# Checkpoint
-## 12:15 - 12:30 (15 minutes) 
-Record your question, planned workflow, first result and main obstacle.
+## Checkpoint
+### 12:15 - 12:30 (15 minutes) 
+Record your research question, planned workflow, first result and main obstacle.
+You are welcome to share your plan for feedback during the online session.
 This becomes the starting point for Thursday afternoon.
 
 The **deliverable**: your mini-project analysis plan:
@@ -42,4 +49,4 @@ The **deliverable**: your mini-project analysis plan:
 | Data and metadata |  |
 | Proposed analytical approach |  |
 | Expected result |  |
-| Main uncertainty or risk |  |
+| Any uncertainty or risk |  |
