@@ -4,7 +4,7 @@ The main purpose of this session is turn your the analysis into a concise, defen
 By the end of this session you will have a "poster skeleton" (very appropriate for Halloween!) that serves as a draft of your final coursework.
 
 ## Construct the scientific story
-# 13:30–14:00 (30 min)
+### 13:30–14:00 (30 min)
 Complete these sentences:
 - Question: I wanted to find out whether…
 - Approach: I analysed…
