@@ -38,7 +38,7 @@ Revisit your results and identify at least one limitation, uncertainty or potent
 - Are gene annotations and functional claims supported?	Is the assembly suitable for the intended downstream use?
   Try to write a few sentences that critically appraise your results so far.
 
-## Optinonaal peer review
+## Optinonal peer review
 ## 11:15–12:00 (45 minutes)
 Work with a partner. Share what you have so far with each other. Specifically, show:
 - your biological question,
