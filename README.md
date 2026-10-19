@@ -26,8 +26,8 @@ The lecture slides will be posted on Bristol's [Blackboard](https://www.ole.bris
 - Quick recap on de-novo assembly
 - Quality control of assembled genome sequence
 - Hybrid _de-novo_ assembly (short-read-first versus long-read-first)
-- Practical: [Assembling and annotating a prokaryotic genome from **short** reads](practicals/assembling-bacterial-genome-short-reads.md)
-- Practical: [Assembling and annotating a prokaryotic genome from **long** reads](practicals/assembling-bacterial-genome-long-reads.md)
+- Practical: [Assembling and annotating a prokaryotic genome from **short** reads](assembling-bacterial-genome-short-reads.md)
+- Practical: [Assembling and annotating a prokaryotic genome from **long** reads](assembling-bacterial-genome-long-reads.md)
 - Further information [about assembly](assembly-further-reading.md)
 
 ## Tuesday p.m. - Sequence reads and gene expression
@@ -39,9 +39,9 @@ The lecture slides will be posted on Bristol's [Blackboard](https://www.ole.bris
 - Practical: [RNA-seq analysis of a bacterial plant pathogen](transcriptomics.md)
 
 ## Wednesday a.m. - From sequence reads to biological knowledge
-- Practical: [Masking repeats](practicals/masking-repeats.md)
-- Practical: [Genome annotation - eukaryote](practicals/genome-annotation-eukaryote.md)
-- Practical: [AI-enabled prediction of protein 3-D structure](practicals/alphafold.md)
+- Practical: [Masking repeats](masking-repeats.md)
+- Practical: [Genome annotation - eukaryote](genome-annotation-eukaryote.md)
+- Practical: [AI-enabled prediction of protein 3-D structure](alphafold.md)
 
 ## Wednesday p.m.
 
