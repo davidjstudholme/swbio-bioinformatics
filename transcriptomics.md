@@ -38,7 +38,7 @@ to do the downsampling.
 Note that we also not including replicates in this analysis, to save time and avoid complexity.
 When performing research, it would be necessary to include several replicates of the treatmenet and the control.
 
-- The data are from: [BioProject PRJNA261679](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA261679)
+- The data are from: [BioProject PRJNA261679](https://www.ncbi.nlm.nih.gov/search/all/?term=PRJNA261679).
 - Original study: Kim, S., Cho, Y. J., Song, E. S., Lee, S. H., Kim, J. G., & Kang, L. W. (2016). Time-resolved pathogenic gene expression analysis of the plant pathogen *Xanthomonas oryzae* pv. *oryzae*. *BMC Genomics*, **17**, 345. [https://doi.org/10.1186/s12864-016-2657-7](https://doi.org/10.1186/s12864-016-2657-7).
 
 ---
