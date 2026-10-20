@@ -30,18 +30,18 @@ The lecture slides will be posted on Bristol's [Blackboard](https://www.ole.bris
 - Practical: [Assembling and annotating a prokaryotic genome from **long** reads](assembling-bacterial-genome-long-reads.md)
 - Further information [about assembly](assembly-further-reading.md)
 
-## Tuesday p.m. - Sequence reads and gene expression
+## Tuesday p.m. - From sequence reads to biological knowledge
+- Practical: [Masking repeats](masking-repeats.md)
+- Practical: [Genome annotation - eukaryote](genome-annotation-eukaryote.md)
+- Practical: [AI-enabled prediction of protein 3-D structure](alphafold.md)
+
+## Wednesday a.m. - Sequence reads and gene expression
 
 - Mapping (or alignment) of reads against a reference
 - Quantification
 - Differential gene expression
 - Interpretation
 - Practical: [RNA-seq analysis of a bacterial plant pathogen](transcriptomics.md)
-
-## Wednesday a.m. - From sequence reads to biological knowledge
-- Practical: [Masking repeats](masking-repeats.md)
-- Practical: [Genome annotation - eukaryote](genome-annotation-eukaryote.md)
-- Practical: [AI-enabled prediction of protein 3-D structure](alphafold.md)
 
 ## Wednesday p.m.
 
