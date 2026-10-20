@@ -48,16 +48,16 @@ The lecture slides will be posted on Bristol's [Blackboard](https://www.ole.bris
 Wednesday afternoon is kept clear to allow travel back from Exeter to your home institution.
 
 ## Thursday a.m.
-- [Session plan](thursday_morning.md)
+- [Session plan](thursday-morning.md)
   
 ## Thursday p.m.
-- [Session plan](thursday_afternoon.md)
+- [Session plan](thursday-afternoon.md)
 
 ## Friday  a.m.
-- [Session plan](friday_morning.md)
+- [Session plan](friday-morning.md)
 
 ## Friday  p.m.
-- [Session plan](friday_afternoon.md)
+- [Session plan](friday-afternoon.md)
 
 By the end of Friday, you should have made meaningful progress on your chosen mini-project,
 produced at least one interpretable result, evaluated its reliability, and identified what you would do next.
