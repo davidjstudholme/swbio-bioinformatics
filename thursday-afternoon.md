@@ -14,7 +14,8 @@ Project type. Examples of tasks:
 - RNA-seq	Check reads, map to a reference, quantify expression, investigate differential expression
 - Genome assembly	Assemble reads, inspect contigs, assess assembly quality
 - Open-ended project	Implement the first steps of an agreed, feasible workflow
-Use the supplied datasets and existing Galaxy workflows wherever possible, rather than spending the session downloading huge datasets or installing software.
+
+Use supplied datasets and existing Galaxy workflows where possible, rather than spending the session downloading huge datasets or installing software.
 
 ## Turn outputs into figures
 ### 15:00–15:45 (45 min)
