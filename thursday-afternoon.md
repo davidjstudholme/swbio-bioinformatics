@@ -8,7 +8,7 @@ You work through your proposed workflows, with support available via the online 
 The session consists of three stages.
 
 ## Run the analysis
-### 13:30–14:45 (15 min)
+### 13:30–14:45 (75 min)
 Students continue their chosen mini-project, following the workflow they developed in the morning. The tasks will differ by project.
 Project type. Examples of tasks:
 - RNA-seq	Check reads, map to a reference, quantify expression, investigate differential expression
