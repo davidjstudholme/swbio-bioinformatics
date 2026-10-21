@@ -32,7 +32,7 @@ Step away from the screen and do whatever you need to do!
 ## Develop an analysis plan
 ### 10:45 - 11:30 (45 min)
 Draw a simple workflow showing the steps needed to answer your question. You should explain what each step is intended to achieve, rather than simply listing software.
-You also need to identify the output you expect from each step and how they you judge whether it is satisfactory.
+You also need to identify the output you expect from each step and how you will judge whether it is satisfactory.
 
 
 ## Begin the analysis
