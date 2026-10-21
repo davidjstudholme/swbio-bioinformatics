@@ -27,9 +27,8 @@ You should establish:
 ## Break
 ### 10:30 - 10:45 (15 min)
 
-
+## Develop an analysis plan
 ### 10:45 - 11:30 (45 min)
-### Develop an analysis plan
 Draw a simple workflow showing the steps needed to answer your question. You should explain what each step is intended to achieve, rather than simply listing software.
 You also need to identify the output you expect from each step and how they you judge whether it is satisfactory.
 
