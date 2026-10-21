@@ -109,7 +109,7 @@ By using the human library of repeats, we will have only identified the most gen
 - For "Perform soft-masking instead of hard-masking", choose Yes.
 - Press the **Run Tool** button to begin.
 
-See image: [Seeting up RepeatMasker tool](masking-repeats/running-repeatmasker-2.png).
+See image: [Setting up RepeatMasker tool](masking-repeats/running-repeatmasker-2.png).
 
 While RepeatMasker is still running, your Galaxy history will looks something like this image:
 
