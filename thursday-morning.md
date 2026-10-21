@@ -26,6 +26,8 @@ You should establish:
 
 ## Break
 ### 10:30 - 10:45 (15 min)
+Step away from the screen and do whatever you need to do!
+
 
 ## Develop an analysis plan
 ### 10:45 - 11:30 (45 min)
