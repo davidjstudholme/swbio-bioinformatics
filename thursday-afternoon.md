@@ -18,7 +18,7 @@ Use the supplied datasets and existing Galaxy workflows wherever possible, rathe
 
 ## Turn outputs into figures
 ### 15:00–15:45 (45 min)
-Try to dentify at least one result worth communicating.
+Try to identify at least one result worth communicating.
 Examples might include:
 - An RNA-seq PCA plot or volcano plot.
 - A table of candidate differentially expressed genes.
