@@ -40,7 +40,7 @@ Revisit your results and identify at least one limitation, uncertainty or potent
 
 ## Break
 ## 11:00–11:15 (15 minutes)
-
+Take a break. Step away from the screen!
 
 ## Optinonal peer review
 ## 11:15–12:00 (45 minutes)
