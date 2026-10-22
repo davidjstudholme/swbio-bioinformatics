@@ -29,6 +29,11 @@ You can fix and refine those later.
 |Results	| Present the main figure or table with a useful legend |
 |Conclusion |	State what the evidence supports, including limitations |
 |References	| Credit the original study, source of datasets and relevant methods |
+
+
+## Break
+### 14:45–15:00 (15 min)
+Relax! Take a break.
  
 
 ## Figure and caption workshop
