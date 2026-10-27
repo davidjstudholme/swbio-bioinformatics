@@ -1,3 +1,15 @@
+## Licence
+
+Unless otherwise indicated, the original teaching materials in this repository are licensed under a [Creative Commons Attribution 4.0 International Licence (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to share and adapt these materials for any purpose, provided that appropriate credit is given, a link to the licence is included, and any changes are indicated.
+
+**Suggested citation:**
+
+Studholme, D. J. (2026). *SWBio Bioinformatics*. GitHub. https://github.com/davidjstudholme/swbio-bioinformatics
+
+Third-party materials are excluded from this licence unless otherwise indicated.
+
 # SWBio Bioinformatics course praticals
 Welcome to the SWBio Bioinformatics course at https://davidjstudholme.github.io/swbio-bioinformatics/.
 
