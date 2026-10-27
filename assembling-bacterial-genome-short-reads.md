@@ -51,7 +51,7 @@ See image: [TrimGalore results in history](<assembly/Screenshot 2025-09-30 at 15
 
 ## Step 3: check the quality of the sequence data before and after applying filtering + trimming
 
-We will use FastQC and MultiQC to assess the quality of the sequence reads data (which is in FASTQ format).
+We will use FastQC to assess the quality of the sequence reads data (which is in FASTQ format).
 
 - Find the [FastQC tool](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffastqc%2Ffastqc%2F0.74%2Bgalaxy1&version=latest) in Galaxy.
 
