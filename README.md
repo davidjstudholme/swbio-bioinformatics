@@ -10,7 +10,7 @@ Studholme, D. J. (2026). *SWBio Bioinformatics*. GitHub. https://github.com/davi
 
 Third-party materials are excluded from this licence unless otherwise indicated.
 
-# SWBio Bioinformatics course praticals
+# SWBio Bioinformatics course practicals
 Welcome to the SWBio Bioinformatics course at https://davidjstudholme.github.io/swbio-bioinformatics/.
 
 ## Monday p.m. - Introduction
